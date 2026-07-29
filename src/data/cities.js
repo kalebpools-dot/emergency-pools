@@ -76,6 +76,117 @@ export const CITIES = [
     },
   },
   {
+    slug: 'killeen',
+    name: 'Killeen',
+    state: 'TX',
+    perService: {
+      'pool-pump-repair': {
+        intro:
+          'Killeen runs on the same brutal Central Texas summer heat as the rest of I-35 country, and pool pumps here fail on the same predictable schedule — capacitors and bearings giving out from months of near-continuous run time. With Fort Cavazos anchoring the local economy, a lot of Killeen pools also sit behind rental properties that change hands often, which means deferred pump maintenance is common.',
+        local:
+          'If you are a landlord or property manager juggling multiple addresses, we get it — the shaft-spin test still tells us in thirty seconds whether a tenant’s "pool won’t turn on" call is a $30 part or a dead motor, so you are not guessing over the phone. We can also work directly with tenants on-site and bill the owner, which saves a step during a busy PCS season.',
+        faq: {
+          q: 'Can you work directly with my tenant and bill me separately?',
+          a: 'Yes. Give us the property details and your contact info when you book, and we can diagnose and repair on-site with the tenant present while invoicing goes straight to you.',
+        },
+      },
+      'green-pool-cleanup': {
+        intro:
+          'A lot of the green pools we see in Killeen have the same backstory: a family got orders and moved out, and the pool sat unattended for weeks before a new tenant or buyer noticed. Between PCS cycles at Fort Cavazos and a hot Central Texas summer, an untreated pool goes from cloudy to swamp faster than most owners expect.',
+        local:
+          'If you just took over a property — as a new owner, a landlord between tenants, or a PCS family moving in — do not shock blind. We test full water chemistry first, especially CYA, since previous owners’ years of stabilized chlorine tabs can lock chlorine out entirely. You get an honest recovery timeline on the first visit, whether that is a straightforward shock-and-brush job or a partial drain first.',
+        faq: {
+          q: 'We just moved into base housing nearby (or a rental) and the pool is green. What now?',
+          a: 'A full water test comes first, especially stabilizer (CYA) — it tells us whether this is a normal shock-and-brush recovery or needs a partial drain before treatment even starts working. Either way you get the real plan and timeline at the first visit.',
+        },
+      },
+      'pool-leak-repair': {
+        intro:
+          'Killeen sits on the same limestone-heavy Central Texas ground as the rest of the region, and seasonal ground movement shows up as slow leaks at skimmer throats, fittings, and plumbing penetrations — especially in older pools that have been through a few ownership changes.',
+        local:
+          'Before assuming the worst, run the numbers: peak Killeen summers can evaporate well over an inch of pool water a week on their own, and an autofill valve will happily mask a real leak behind a climbing water bill for months. We walk you through the bucket test by phone at no charge, and if it points to a real leak, dye and pressure testing find it without cutting into decking to search.',
+        faq: {
+          q: 'The water bill went up but the pool still looks full. Could it still be a leak?',
+          a: 'Very possibly — an autofill hides water loss by quietly refilling the pool, so the level never looks low even while you are paying for the leak. Shutting the autofill off for 24 hours and watching the level against a bucket usually settles it.',
+        },
+      },
+    },
+  },
+  {
+    slug: 'harker-heights',
+    name: 'Harker Heights',
+    state: 'TX',
+    perService: {
+      'pool-pump-repair': {
+        intro:
+          'Harker Heights has grown fast along the FM 2410 corridor, which means a real mix of pump ages — newer variable-speed systems in recently built subdivisions next to older single-speed motors in established neighborhoods closer to the Fort Cavazos gate. Both fail for the same underlying reason in a Central Texas summer: long daily run times with little rest.',
+        local:
+          'In the newer sections, the pump complaint is usually a variable-speed drive shutting itself down rather than a dead motor — that is the drive protecting itself, most often from a suction-side air leak or priming issue, and we check that before anyone talks replacement. In the older streets, it is more often a straightforward capacitor or bearing failure, and the shaft-spin test sorts that in under a minute on site.',
+        faq: {
+          q: 'My newer variable-speed pump keeps shutting off by itself — is it already broken?',
+          a: 'Usually not. Modern drives are designed to cut power rather than run dry, so a self-stopping pump is often protecting itself from an air leak or priming problem upstream. We diagnose the cause instead of just swapping the pump.',
+        },
+      },
+      'green-pool-cleanup': {
+        intro:
+          'Harker Heights green-pool calls cluster around two moments: a family moving for orders and leaving a pool untreated for a few weeks, or a stretch of summer heat that outpaces a maintenance schedule built for cooler months. Either way, algae takes hold fast once chlorine falls behind.',
+        local:
+          'Area lakes near Belton and Stillhouse Hollow are a favorite weekend spot, and swimsuits and pool toys that have been in lake water are a common way black algae gets introduced into a home pool. It roots into plaster where ordinary chlorine cannot reach it, so dark spots that brush off and return are worth calling about before they spread across the pool floor.',
+        faq: {
+          q: 'We were at the lake all weekend and now there are dark spots in the pool. Is that a problem?',
+          a: 'It can be — that pattern is a classic sign of black algae hitching a ride in on lake-soaked gear. It needs targeted treatment and aggressive brushing rather than a normal shock dose, and starting early keeps the job small.',
+        },
+      },
+      'pool-leak-repair': {
+        intro:
+          'Pools in Harker Heights span decades of construction, from older homes near the Fort Cavazos gate to newer builds off FM 2410, and the leak pattern tracks the age: older shells separate slowly at skimmers and fittings, while newer plumbing joints occasionally never fully sealed in the first couple of seasons.',
+        local:
+          'The tell that saves everyone time: does the pool lose water with the pump off (points to the shell or fittings) or only when it is running (points to a pressure-side plumbing leak)? Note which one you are seeing before you call — we confirm with dye and pressure testing and pinpoint the section before any ground gets opened.',
+        faq: {
+          q: 'The pool only drops water when the pump is running. What does that tell you?',
+          a: 'That is a strong sign of a pressure-side plumbing leak — water being pushed out through a break underground rather than a shell leak. It is exactly the kind of thing pressure testing isolates quickly, often to a single section of pipe.',
+        },
+      },
+    },
+  },
+  {
+    slug: 'temple',
+    name: 'Temple',
+    state: 'TX',
+    perService: {
+      'pool-pump-repair': {
+        intro:
+          'Temple has expanded quickly with new subdivisions on the west side of town, alongside older, established neighborhoods closer to downtown — so pump calls range from newer Pentair and Hayward variable-speed systems to single-speed motors well past their expected life. Both fight the same long Central Texas run times every summer.',
+        local:
+          'On the older single-speed motors especially common in Temple’s established neighborhoods, a hum with no spin usually means a failed start capacitor — cheap and fast to fix. If the motor is otherwise sound but original to the pool, that failure is often the natural moment to move to a variable-speed replacement and cut the summer power bill going forward.',
+        faq: {
+          q: 'Is it worth upgrading to a variable-speed pump when the old one finally dies?',
+          a: 'Often yes, especially on an older single-speed motor that ran full-time for years. The energy savings over a Central Texas run season can offset a meaningful share of the upgrade cost, and our factory-authorized dealer backing keeps it warranty-eligible.',
+        },
+      },
+      'green-pool-cleanup': {
+        intro:
+          'Temple’s growth as a regional hub — anchored by the Baylor Scott & White medical campus — means a steady stream of new residents inheriting pools they did not maintain through the previous owner’s tenure. A green pool at closing, or one that got away from a busy household for a couple of weeks, is one of our most common calls here.',
+        local:
+          'If you just closed on a Temple home with a green pool, resist the urge to dump in shock before testing. Years of a previous owner’s stabilized chlorine tabs commonly push CYA high enough to lock chlorine out chemically, no matter how much you add. We test first, and if a partial drain has to happen before treatment can work, you hear that plan and price on the first visit.',
+        faq: {
+          q: 'We just bought a house in Temple and the pool is green. Where do we start?',
+          a: 'With a full water test, especially stabilizer (CYA). New owners inherit whatever chemistry history came before them, and that single number usually decides whether this is a normal shock-and-brush recovery or needs a partial drain first.',
+        },
+      },
+      'pool-leak-repair': {
+        intro:
+          'Temple sits on the same limestone-and-clay mix as the rest of the I-35 corridor, and ground movement between wet and dry stretches shows up in pools as slow separation at skimmer throats, return fittings, and tile lines — especially in the city’s older neighborhoods.',
+        local:
+          'Before assuming a leak, run the math: a Central Texas summer can evaporate well over an inch of pool water a week through evaporation alone, and an autofill valve will quietly hide a real leak behind a rising water bill in the meantime. Try the bucket test first — we will walk you through it by phone at no charge — and if it says leak, dye and pressure testing pinpoint it without opening up decking to search.',
+        faq: {
+          q: 'How do I know if it is really a leak and not just summer evaporation?',
+          a: 'The bucket test settles it: put a bucket of water on the top step next to the pool. If the pool drops faster than the bucket over a couple of days, that is a real leak, not evaporation — and we can take it from there.',
+        },
+      },
+    },
+  },
+  {
     slug: 'cedar-park',
     name: 'Cedar Park',
     state: 'TX',
