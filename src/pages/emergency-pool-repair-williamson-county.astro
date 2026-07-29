@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import Dispatch from '../components/Dispatch.astro';
+import { SITE } from '../data/site.js';
+import { SERVICES } from '../data/services.js';
+import { CITIES } from '../data/cities.js';
+---
+
+<Base
+  title="Emergency Pool Repair Williamson County TX | Emergency Pools"
+  description="Urgent pool repair across Williamson County — Georgetown, Round Rock, Cedar Park, Leander, Hutto, and more. Technician within 24 hours. Call (512) 764-9867."
+>
+  <h1>Emergency pool repair across Williamson County</h1>
+
+  <Dispatch problem="Any urgent pool failure, anywhere in the county" area="Williamson County, Texas" />
+
+  <p>
+    Emergency Pools runs urgent-response pool repair across Williamson County, with primary
+    coverage in Georgetown, Round Rock, and Cedar Park and on-availability service in
+    {' '}{SITE.onAvailabilityCities.join(', ')}. If your town is not listed, call anyway — the
+    honest answer about whether we can reach you inside the {SITE.responsePromise.split(' — ')[0]}
+    {' '}window takes thirty seconds on the phone.
+  </p>
+
+  <h2>What we fix</h2>
+  <ul class="link-grid">
+    {
+      SERVICES.map((s) => (
+        <li>
+          <a href={`/${s.slug}/`}>
+            {s.name}
+            <small>{s.problem}</small>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>How county-wide response works</h2>
+  <ol class="steps">
+    <li>
+      Calls are triaged by urgency and location. A pool actively losing water or a pump failure in
+      peak summer moves to the front of the day.
+    </li>
+    <li>
+      Our trucks base out of Georgetown, so response radiates from there — Georgetown, Round Rock,
+      and Cedar Park calls are usually the fastest, and outlying towns are scheduled honestly
+      around drive time.
+    </li>
+    <li>
+      Diagnosis happens before repair, every time. {SITE.feeLine}
+    </li>
+    <li>
+      Parts access runs through factory-authorized channels for Hayward, Pentair, and Jandy — which
+      is often the difference between fixed-this-week and waiting-on-a-part.
+    </li>
+  </ol>
+
+  <h2>Primary service cities</h2>
+  <ul class="link-grid">
+    {
+      CITIES.map((c) => (
+        <li>
+          <a href={`/pool-pump-repair/${c.slug}/`}>
+            {c.name}, TX
+            <small>pump · green cleanup · leaks</small>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Do you charge more for outlying towns?</h3>
+    <p>
+      The service call fee covers the visit and diagnosis regardless of town, and it is credited
+      toward your repair if you hire us. For the farthest edges of the county we confirm scheduling
+      and any drive considerations on the phone before booking — no surprises at the door.
+    </p>
+    <h3>My town is not on the list. Can you still come?</h3>
+    <p>
+      Often yes. Coverage beyond the primary cities depends on the day&rsquo;s schedule, and we
+      would rather tell you a truthful &ldquo;tomorrow morning&rdquo; than a hopeful
+      &ldquo;today&rdquo; that slips. Call and ask — it costs nothing to know.
+    </p>
+  </section>
+
+  <Dispatch problem="Any urgent pool failure, anywhere in the county" area="Williamson County, Texas" />
+</Base>

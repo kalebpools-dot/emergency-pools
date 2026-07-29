@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+import { SERVICES } from '../../data/services.js';
+import { CITIES } from '../../data/cities.js';
+
+export function getStaticPaths() {
+  return SERVICES.map((service) => ({
+    params: { service: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+---
+
+<Base
+  title={`${service.phrase} | Georgetown, Round Rock & Cedar Park | Emergency Pools`}
+  description={`${service.phrase} in Georgetown, Round Rock, and Cedar Park TX. Technician within 24 hours — often same-day. Call (512) 764-9867.`}
+>
+  <h1>{service.phrase} — Georgetown, Round Rock &amp; Cedar Park</h1>
+
+  <Dispatch problem={service.problem} area={SITE.serviceArea} />
+
+  <p>{service.hubIntro}</p>
+
+  <h2>What happens when you call</h2>
+  <ol class="steps">
+    {service.steps.map((step) => <li>{step}</li>)}
+  </ol>
+
+  <h2>What the visit costs</h2>
+  <p>{SITE.feeLine}</p>
+
+  {
+    service.hasCityPages && (
+      <>
+        <h2>{service.name} near you</h2>
+        <ul class="link-grid">
+          {CITIES.map((c) => (
+            <li>
+              <a href={`/${service.slug}/${c.slug}/`}>
+                {service.name} in {c.name}, TX
+                <small>local response details</small>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    {
+      service.faq.map((item) => (
+        <>
+          <h3>{item.q}</h3>
+          <p>{item.a}</p>
+        </>
+      ))
+    }
+  </section>
+
+  <Dispatch problem={service.problem} area={SITE.serviceArea} />
+</Base>

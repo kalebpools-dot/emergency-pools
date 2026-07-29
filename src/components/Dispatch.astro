@@ -1,0 +1,17 @@
+---
+import { SITE } from '../data/site.js';
+const { problem, area } = Astro.props;
+---
+
+<div class="dispatch">
+  <dl>
+    <dt>Problem</dt>
+    <dd>{problem}</dd>
+    <dt>Response</dt>
+    <dd>Technician {SITE.responsePromise}</dd>
+    <dt>Area</dt>
+    <dd>{area}</dd>
+  </dl>
+  <a class="call-btn" href={SITE.phoneHref}>Call {SITE.phoneDisplay}</a>
+  <p class="call-sub">{SITE.hoursLine}</p>
+</div>

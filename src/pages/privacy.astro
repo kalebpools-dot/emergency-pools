@@ -1,0 +1,126 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+
+const lastUpdated = 'July 28, 2026';
+---
+
+<Base
+  title="Privacy Policy | Emergency Pools"
+  description="How Emergency Pools collects, uses, and protects information from visitors to emergencypools.com."
+>
+  <h1>Privacy Policy</h1>
+  <p><em>Last updated: {lastUpdated}</em></p>
+
+  <p>
+    This policy explains what information {SITE.name} collects when you visit {SITE.domain},
+    how it is used, and the choices you have. By using this site, you agree to the practices
+    described below.
+  </p>
+
+  <h2>Information we collect</h2>
+  <p>
+    We do not require you to create an account or submit a form to browse this site. The
+    information we collect falls into two categories:
+  </p>
+  <ul>
+    <li>
+      <strong>Information you give us directly.</strong> If you call the number listed on this
+      site, we receive your phone number and whatever details you share with our team to
+      schedule service. We do not collect payment information through this website.
+    </li>
+    <li>
+      <strong>Information collected automatically.</strong> Like most websites, we use cookies
+      and similar tracking technologies to understand how visitors use the site — which pages
+      are viewed, how long visitors stay, and whether a visit leads to a phone call. This is
+      described in more detail below.
+    </li>
+  </ul>
+
+  <h2>Cookies and tracking technologies</h2>
+  <p>
+    This site uses Google Tag Manager to run the following tools. None of them collect your
+    name, email, or payment details through this website — they track browsing behavior tied to
+    your device or browser, not your identity.
+  </p>
+  <ul>
+    <li>
+      <strong>Google Analytics (GA4).</strong> Measures page views, time on site, and which
+      pages visitors leave from, so we can find and fix parts of the site that aren&rsquo;t
+      working for visitors. See{' '}
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+        Google&rsquo;s Privacy Policy
+      </a>.
+    </li>
+    <li>
+      <strong>Google Ads.</strong> If you&rsquo;ve visited this site, you may later see ads from
+      {SITE.name} on other websites or in Google search results. You can control ad
+      personalization at{' '}
+      <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">
+        Google Ads Settings
+      </a>.
+    </li>
+    <li>
+      <strong>Meta Pixel (Facebook/Instagram).</strong> Similarly, this may show you ads from
+      {SITE.name} on Facebook or Instagram after you visit this site. You can control this at{' '}
+      <a
+        href="https://www.facebook.com/adpreferences"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Meta Ad Preferences
+      </a>.
+    </li>
+    <li>
+      <strong>Microsoft Clarity.</strong> Records anonymized session behavior (scrolling,
+      clicks) and heatmaps so we can see which parts of a page get attention and which get
+      skipped. See{' '}
+      <a
+        href="https://privacy.microsoft.com/privacystatement"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Microsoft&rsquo;s Privacy Statement
+      </a>.
+    </li>
+  </ul>
+  <p>
+    You can block or delete cookies at any time through your browser settings. Doing so may
+    affect how parts of the site function, but the site will remain usable.
+  </p>
+
+  <h2>How we use this information</h2>
+  <ul>
+    <li>To understand which pages and service areas visitors are interested in</li>
+    <li>To find pages where visitors get stuck or leave without calling</li>
+    <li>To show relevant ads to past visitors who haven&rsquo;t yet called for service</li>
+    <li>To respond to service calls and schedule appointments</li>
+  </ul>
+  <p>We do not sell visitor information to third parties.</p>
+
+  <h2>Data retention</h2>
+  <p>
+    Analytics and advertising data is retained according to each provider&rsquo;s standard
+    retention settings (typically 14&ndash;26 months for Google Analytics). Information shared
+    when you call us is kept only as long as needed to provide service and for basic business
+    recordkeeping.
+  </p>
+
+  <h2>Children&rsquo;s privacy</h2>
+  <p>
+    This site is intended for adults seeking pool service and is not directed at children. We
+    do not knowingly collect information from anyone under 13.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy as our tools or practices change. The &ldquo;last updated&rdquo;
+    date at the top of this page will reflect the most recent revision.
+  </p>
+
+  <h2>Contact us</h2>
+  <p>
+    Questions about this policy or your information? Call {SITE.name} at{' '}
+    <a href={SITE.phoneHref}>{SITE.phoneDisplay}</a>.
+  </p>
+</Base>

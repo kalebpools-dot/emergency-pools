@@ -1,0 +1,87 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+import { CITY_SERVICES } from '../../data/services.js';
+import { CITIES } from '../../data/cities.js';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const service of CITY_SERVICES) {
+    for (const city of CITIES) {
+      paths.push({
+        params: { service: service.slug, city: city.slug },
+        props: { service, city, local: city.perService[service.slug] },
+      });
+    }
+  }
+  return paths;
+}
+
+const { service, city, local } = Astro.props;
+const siblings = CITY_SERVICES.filter((s) => s.slug !== service.slug);
+const otherCities = CITIES.filter((c) => c.slug !== city.slug);
+---
+
+<Base
+  title={`${service.phrase} ${city.name} TX | Emergency Pools`}
+  description={`${service.phrase} in ${city.name}, TX. Technician within 24 hours — often same-day. Honest diagnosis, service call fee credited toward the repair. Call (512) 764-9867.`}
+  city={city.name}
+>
+  <h1>{service.phrase} in {city.name}, TX</h1>
+
+  <Dispatch problem={service.problem} area={`${city.name}, Texas and surrounding neighborhoods`} />
+
+  <p>{local.intro}</p>
+
+  <h2>What happens when you call</h2>
+  <ol class="steps">
+    {service.steps.map((step) => <li>{step}</li>)}
+  </ol>
+
+  <h2>{city.name} specifics</h2>
+  <p>{local.local}</p>
+
+  <h2>What the visit costs</h2>
+  <p>{SITE.feeLine}</p>
+
+  <section class="faq">
+    <h2>Common questions in {city.name}</h2>
+    <h3>{local.faq.q}</h3>
+    <p>{local.faq.a}</p>
+    {
+      service.faq.slice(0, 1).map((item) => (
+        <>
+          <h3>{item.q}</h3>
+          <p>{item.a}</p>
+        </>
+      ))
+    }
+  </section>
+
+  <h2>Also in {city.name}</h2>
+  <ul class="link-grid">
+    {
+      siblings.map((s) => (
+        <li>
+          <a href={`/${s.slug}/${city.slug}/`}>
+            {s.name} in {city.name}
+            <small>{s.problem}</small>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <p>
+    <a href={`/${service.slug}/`}>{service.name} — all service areas</a>
+    {' · '}
+    {otherCities.map((c, i) => (
+      <>
+        <a href={`/${service.slug}/${c.slug}/`}>{c.name}</a>
+        {i < otherCities.length - 1 ? ' · ' : ''}
+      </>
+    ))}
+  </p>
+
+  <Dispatch problem={service.problem} area={`${city.name}, Texas`} />
+</Base>

@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import Dispatch from '../components/Dispatch.astro';
+import { SITE } from '../data/site.js';
+import { SERVICES, CITY_SERVICES } from '../data/services.js';
+import { CITIES } from '../data/cities.js';
+---
+
+<Base
+  title="Emergency Pool Repair Georgetown TX | Emergency Pools"
+  description="Urgent pool pump repair, green pool cleanup, and leak repair in Georgetown, Round Rock, and Cedar Park. Technician within 24 hours — often same-day. Call (512) 764-9867."
+>
+  <h1>Emergency pool repair in Georgetown, Round Rock &amp; Cedar Park</h1>
+  <p>
+    Dead pump, green water, dropping water level, cold spa — pool problems do not wait for a
+    convenient week, so neither do we. Emergency Pools is a dedicated urgent-response pool repair
+    crew for Williamson County, {SITE.backing.charAt(0).toLowerCase() + SITE.backing.slice(1)}
+  </p>
+
+  <Dispatch problem="Any urgent pool failure — describe it when you call" area={SITE.serviceArea} />
+
+  <h2>What we fix</h2>
+  <ul class="link-grid">
+    {
+      SERVICES.map((s) => (
+        <li>
+          <a href={`/${s.slug}/`}>
+            {s.name}
+            <small>{s.problem}</small>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>How an emergency call works</h2>
+  <ol class="steps">
+    <li>
+      You call {SITE.phoneDisplay} and describe the problem. A real diagnosis starts on the phone —
+      what the equipment is doing, when it started, what you have already tried.
+    </li>
+    <li>
+      We schedule a technician {SITE.responsePromise}. You get a time window, not a shrug.
+    </li>
+    <li>
+      The tech diagnoses on site and quotes before touching anything. {SITE.feeLine}
+    </li>
+    <li>Most repairs are completed the same visit — the common failure parts ride on the truck.</li>
+  </ol>
+
+  <h2>Where we work</h2>
+  <ul class="link-grid">
+    {
+      CITIES.map((c) => (
+        <li>
+          <a href={`/pool-pump-repair/${c.slug}/`}>
+            {c.name}, TX
+            <small>pump · green cleanup · leaks</small>
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <a href="/emergency-pool-repair-williamson-county/">
+        Williamson County
+        <small>full coverage area</small>
+      </a>
+    </li>
+  </ul>
+  <p>
+    Also serving {SITE.onAvailabilityCities.join(', ')} on availability — call and we will tell you
+    honestly whether we can get to you inside the promise window.
+  </p>
+
+  <h2>Why a dedicated emergency crew</h2>
+  <p>
+    Weekly pool cleaning routes are built for routine, and an urgent repair breaks the route. Our
+    crew runs repair-first: diagnostic tools, common parts, and factory-authorized sourcing for
+    Hayward, Pentair, and Jandy equipment, so a failed motor or fried capacitor does not turn into
+    a two-week wait. We fix pools for a living, not as a side line — and it shows in how fast the
+    truth gets to you: what failed, what it costs, and when it will be running again.
+  </p>
+</Base>

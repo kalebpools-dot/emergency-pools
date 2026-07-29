@@ -1,0 +1,93 @@
+---
+import { SITE } from '../data/site.js';
+import '../styles/global.css';
+
+const { title, description, city = null } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE.domain).href;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: SITE.name,
+  telephone: '+15127649867',
+  url: canonical,
+  image: `${SITE.domain}/favicon.svg`,
+  priceRange: '$$',
+  areaServed: city
+    ? { '@type': 'City', name: `${city}, TX` }
+    : SITE.launchCities.map((c) => ({ '@type': 'City', name: `${c}, TX` })),
+  address: { '@type': 'PostalAddress', addressRegion: 'TX', addressCountry: 'US' },
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    {SITE.gtmId && (
+      <script
+        set:html={`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${SITE.gtmId}');`}
+      />
+    )}
+  </head>
+  <body>
+    {SITE.gtmId && (
+      <noscript>
+        <iframe
+          src={`https://www.googletagmanager.com/ns.html?id=${SITE.gtmId}`}
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        />
+      </noscript>
+    )}
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">Emergency<span>Pools</span></a>
+        <a class="header-call" href={SITE.phoneHref}>{SITE.phoneDisplay}</a>
+      </div>
+    </header>
+    <div class="status-strip">
+      Serving {SITE.serviceArea} · {SITE.hoursLine}
+    </div>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          <strong>{SITE.name}</strong> · <a href={SITE.phoneHref}>{SITE.phoneDisplay}</a><br />
+          {SITE.hoursLine}
+        </p>
+        <p>{SITE.backing}</p>
+        <p>
+          <a href="/pool-pump-repair/">Pump repair</a> ·
+          <a href="/green-pool-cleanup/">Green pool cleanup</a> ·
+          <a href="/pool-leak-repair/">Leak repair</a> ·
+          <a href="/pool-heater-repair/">Heater repair</a> ·
+          <a href="/pool-equipment-replacement/">Equipment replacement</a> ·
+          <a href="/emergency-pool-repair-williamson-county/">Williamson County</a> ·
+          <a href="/privacy/">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="call-bar">
+      <a href={SITE.phoneHref}>Call now · {SITE.phoneDisplay}</a>
+    </div>
+  </body>
+</html>
