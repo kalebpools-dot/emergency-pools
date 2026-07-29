@@ -1,0 +1,145 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+---
+
+<Base
+  title="Weekly Pool Cleaning Service | Georgetown, Round Rock, Cedar Park"
+  description="Weekly pool cleaning from a factory-authorized repair crew — chemistry, brushing, baskets, and equipment checks, every visit. Call (512) 764-9867."
+>
+  <h1>Weekly pool cleaning service — {SITE.serviceArea}</h1>
+
+  <p>
+    Get your pool cleaned, balanced, and checked every week without thinking about it — by the
+    same crew that handles emergency pump, leak, and heater repairs. That matters more than it
+    sounds: most cleaning services just clean. If something's actually wrong with your equipment,
+    ours can tell you on the spot instead of pointing you toward someone else.
+  </p>
+
+  <div class="dispatch">
+    <dl>
+      <dt>Every visit</dt>
+      <dd>Water testing, chemical balancing, brushing, baskets, and a filter check</dd>
+      <dt>First visit</dt>
+      <dd>A straight price for your pool — no guessing over the phone</dd>
+      <dt>Area</dt>
+      <dd>{SITE.serviceArea}</dd>
+    </dl>
+    <a class="call-btn" href={SITE.phoneHref}>Call to get on the schedule</a>
+    <p class="call-sub">{SITE.hoursLine}</p>
+  </div>
+
+  <h2>What's included in every visit</h2>
+  <ul class="link-grid">
+    <li>
+      Water testing &amp; chemical balancing
+      <small>Chlorine, pH, and alkalinity checked and corrected every time</small>
+    </li>
+    <li>
+      Brushing walls, steps, and tile line
+      <small>Where algae gets a foothold that skimming alone never reaches</small>
+    </li>
+    <li>
+      Vacuuming and skimming
+      <small>Floor and surface debris cleared before it has time to settle</small>
+    </li>
+    <li>
+      Skimmer &amp; pump basket emptied
+      <small>Keeps flow strong between visits</small>
+    </li>
+    <li>
+      Filter pressure check
+      <small>Caught early, before it turns into a circulation problem</small>
+    </li>
+    <li>
+      Equipment pad visual check
+      <small>Pump, filter, and heater looked over every visit, not just when something breaks</small>
+    </li>
+  </ul>
+
+  <h2>Why a repair company runs your weekly cleaning</h2>
+  <p>
+    A standard pool cleaner can tell you the water looks fine. A tech who's also{' '}
+    <a href="/pool-pump-repair/">factory-authorized to repair pumps</a>, heaters, and equipment can
+    tell you the pump is drawing high current, or the filter pressure is climbing faster than it
+    should, weeks before either becomes a breakdown. {SITE.backing} That authorized-dealer backing
+    is the same one behind every repair call we run — your weekly technician isn't guessing about
+    equipment, they're trained on it.
+  </p>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li>
+      Call {SITE.phoneDisplay} and tell us about your pool — size, current condition, and
+      anything about the equipment that's been bothering you.
+    </li>
+    <li>
+      First visit is a full assessment: water test, equipment look-over, and a straight price for
+      ongoing weekly service based on your specific pool. See our{' '}
+      <a href="/guides/pool-cleaning-cost-central-texas/">pool cleaning cost guide</a> for what
+      moves that number.
+    </li>
+    <li>
+      We set a weekly day that works with your schedule and get you on the route.
+    </li>
+    <li>
+      Every week after that: cleaned, balanced water and an equipment check, with any concerns
+      flagged the same visit — not after they've become a repair call.
+    </li>
+  </ol>
+
+  <h2>Already have a green pool?</h2>
+  <p>
+    Weekly service assumes a pool that's already in decent shape. If yours has gone green or been
+    neglected for a while, that's a different starting point — see our{' '}
+    <a href="/green-pool-cleanup/">green pool cleanup page</a> for an emergency recovery, then move
+    to weekly service once it's clear. Many of our weekly customers started exactly that way.
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Do I need to be home for the visit?</h3>
+    <p>
+      No — as long as our technician can reach the pool and equipment pad (through a gate code,
+      side access, or similar), the visit happens on schedule whether you're home or not.
+    </p>
+    <h3>Do you bring the chemicals, or do I need to supply them?</h3>
+    <p>
+      Chemicals used during your weekly visit are part of the service — you don't need to keep a
+      supply on hand or guess at dosing yourself.
+    </p>
+    <h3>Can I pause service, like for a vacation or the off-season?</h3>
+    <p>
+      Yes — let us know ahead of time and we'll adjust the schedule. Central Texas winters often
+      make sense to space out anyway; see our{' '}
+      <a href="/guides/how-often-should-pool-be-cleaned-texas/">
+        guide on cleaning frequency by season
+      </a>.
+    </p>
+    <h3>What happens if you find something wrong with my equipment?</h3>
+    <p>
+      You'll hear about it the same visit, with a straight quote before any repair work starts —
+      {SITE.feeLine.toLowerCase()}
+    </p>
+    <h3>How is this different from your emergency green pool cleanup?</h3>
+    <p>
+      Weekly service is ongoing preventative care for a pool that's already in good shape.{' '}
+      <a href="/green-pool-cleanup/">Green pool cleanup</a> is a one-time rescue for a pool that's
+      already turned green or been neglected. Plenty of customers use one to get clear, then
+      switch to the other to stay that way.
+    </p>
+  </section>
+
+  <div class="dispatch">
+    <dl>
+      <dt>Every visit</dt>
+      <dd>Water testing, chemical balancing, brushing, baskets, and a filter check</dd>
+      <dt>First visit</dt>
+      <dd>A straight price for your pool — no guessing over the phone</dd>
+      <dt>Area</dt>
+      <dd>{SITE.serviceArea}</dd>
+    </dl>
+    <a class="call-btn" href={SITE.phoneHref}>Call to get on the schedule</a>
+    <p class="call-sub">{SITE.hoursLine}</p>
+  </div>
+</Base>
