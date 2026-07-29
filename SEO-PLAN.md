@@ -1,5 +1,13 @@
 # SEO Plan — emergencypools.com
 
+> **Status update (2026-07-28):** The `/guides/` section and all 13 articles
+> below have been written and are live on the temporary preview at
+> https://emergency-pools-preview-2.vercel.app/guides/ — pushed to the
+> `kalebpools-dot/emergency-pools` GitHub repo, not yet on the production
+> domain (see the deploy-access gap noted elsewhere in this conversation).
+> Sections 3–5 (article list and prompts) are kept below for reference and
+> in case you want to regenerate or expand any article later.
+
 Focus: **pool cleaning service** and **pool pump repair**, in that order.
 Goal of this doc: (1) what to fix/build next for SEO, (2) the article list,
 (3) copy-paste prompts so a lower-level AI can write the articles without
