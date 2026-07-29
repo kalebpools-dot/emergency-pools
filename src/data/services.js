@@ -125,6 +125,106 @@ export const SERVICES = [
       },
     ],
   },
+  {
+    slug: 'pool-filter-repair',
+    name: 'Pool filter repair',
+    phrase: 'Pool filter repair & replacement',
+    problem: 'Filter pressure too high, water still cloudy, or a cracked/leaking filter tank',
+    hasCityPages: true,
+    hubIntro:
+      'The filter is the part of the system most people never think about until the water tells them something is wrong — climbing pressure, cloudy water despite normal chlorine, or a tank that is visibly cracked or weeping at a seam. We service and repair cartridge, DE, and sand filters across Georgetown, Round Rock, and Cedar Park, and as a factory-authorized dealer for Hayward, Pentair, and Jandy, the cartridges, grids, and valve parts for those systems are usually already on the truck.',
+    steps: [
+      'We start with the pressure gauge, compared against your filter\'s clean-water baseline — a high reading means restricted flow, and how high tells us whether this is a normal cleaning or something more.',
+      'Cartridge filters get pulled and inspected for torn pleats or media so packed with debris that rinsing will not restore flow. DE and sand filters get checked at the manifold and multiport valve, since a cracked lateral or a valve stuck between settings can mimic a dirty-filter symptom exactly.',
+      'Tank and O-ring seals get a visual and pressure check — the usual source of a filter that is quietly weeping water at the equipment pad.',
+      'You get a straight answer on clean-vs-replace before anything is billed. Hayward, Pentair, and Jandy filters we service all take factory-authorized cartridges and parts, so a replacement stays warranty-eligible.',
+    ],
+    faq: [
+      {
+        q: 'How do I know if my filter needs cleaning or full replacement?',
+        a: 'Pressure that drops back to normal after a good cleaning means the filter media is still doing its job. Pressure that climbs again within days, or a tank with visible cracking, usually means the media or the tank itself has reached the end of its service life.',
+      },
+      {
+        q: 'Cartridge, DE, or sand — does it matter for Central Texas water?',
+        a: 'All three work here, but our hard, mineral-heavy water scales cartridge pleats and DE grids faster than in softer-water regions, so filters get cleaned or backwashed a bit more often than the manufacturer\'s mild-climate guidance suggests.',
+      },
+    ],
+  },
+  {
+    slug: 'pool-automation-plumbing',
+    name: 'Pool automation & plumbing',
+    phrase: 'Pool automation & plumbing repair',
+    problem: 'Automation panel unresponsive, a valve not switching, or plumbing not routing water correctly',
+    hasCityPages: true,
+    hubIntro:
+      'Automation and plumbing problems tend to look mysterious from the surface — a schedule that will not run, a valve that will not switch to the spa, water that is not reaching every return the way it used to — but they almost always trace back to a specific actuator, valve, or line. We repair automation systems and plumbing across Georgetown, Round Rock, and Cedar Park, and as a factory-authorized dealer for Hayward, Pentair, and Jandy, we work directly with all three brands\' control panels and app-based systems rather than treating any one as a specialty.',
+    steps: [
+      'We start at the control panel or app: what error, if any, is it showing, and does the schedule and manual override behave consistently? That narrows a software/programming issue from a hardware one before we touch equipment.',
+      'Automated valve actuators get tested directly — a valve that will not switch is often the actuator motor or its connection to the panel, not the valve body itself.',
+      'Plumbing gets checked at the manifold and any accessible unions for restricted or misrouted flow, which shows up as weak returns, an unbalanced spa/pool split, or equipment starved of water despite the pump running fine.',
+      'Any programming changes or valve replacements get tested through a full cycle before we call it done — not just powered on, but actually switching and holding under real operation.',
+    ],
+    faq: [
+      {
+        q: 'My automation app shows the equipment as on, but nothing is running. What does that mean?',
+        a: 'That is usually a communication problem between the app and the control panel rather than the equipment itself — a lost Wi-Fi connection, a panel that needs a reset, or a firmware issue. We check the panel directly rather than trusting the app\'s status alone.',
+      },
+      {
+        q: 'Can you add automation to a pool that has never had it?',
+        a: 'Yes — Hayward, Pentair, and Jandy all offer automation systems that retrofit onto existing plumbing and equipment. We\'ll look at what you already have and recommend the system that fits it without unnecessary replacement.',
+      },
+    ],
+  },
+  {
+    slug: 'uv-ozone-sanitizer-repair',
+    name: 'UV & ozone sanitizer repair',
+    phrase: 'UV & ozone pool sanitizer repair',
+    problem: 'UV or ozone sanitizer not reducing chlorine demand like it used to',
+    hasCityPages: true,
+    hubIntro:
+      'UV and ozone systems are supplemental sanitizers — they cut down how much chlorine your pool needs and knock out chloramines that cause that "chlorine smell" people mistake for too much chlorine, rather than too little. When one stops pulling its weight, chlorine demand quietly climbs and nobody notices until they are buying more chemical than they used to. We service UV and ozone systems across Georgetown, Round Rock, and Cedar Park, and as a factory-authorized dealer for Hayward, Pentair, and Jandy, we carry replacement bulbs, sleeves, and ozone cells for the systems those brands sell.',
+    steps: [
+      'UV bulbs have a fixed service life regardless of how the system looks — we check bulb hours against the manufacturer\'s replacement interval first, since a system running on an expired bulb looks fine but is not actually sanitizing.',
+      'The quartz sleeve around the bulb gets inspected for scaling — our hard Central Texas water builds mineral deposits on the sleeve faster than in softer-water regions, and a scaled sleeve blocks UV output even with a fresh bulb.',
+      'Ozone systems get checked at the generator and injection point, confirming ozone is actually being produced and delivered into the plumbing, not just that the unit is powered on.',
+      'We confirm the fix worked by watching chlorine demand over the following days — a properly functioning UV or ozone system should visibly ease how much chlorine the pool needs to hold a reading.',
+    ],
+    faq: [
+      {
+        q: 'How often does a UV bulb actually need replacing?',
+        a: 'Most residential UV bulbs are rated for about one swim season of continuous use regardless of visible wear, since UV output degrades well before the bulb visibly fails. Replacing on the manufacturer\'s schedule, not by appearance, is what keeps the system working.',
+      },
+      {
+        q: 'Does UV or ozone mean I do not need chlorine anymore?',
+        a: 'No — both are supplemental. They reduce how much chlorine you need and improve water quality, but neither replaces a chlorine residual as your primary, ongoing sanitizer.',
+      },
+    ],
+  },
+  {
+    slug: 'pool-heat-pump-repair',
+    name: 'Pool heat pump repair',
+    phrase: 'Pool heat pump repair',
+    problem: 'Heat pump running but not heating, or not turning on at all',
+    hasCityPages: true,
+    hubIntro:
+      'A pool heat pump fails differently than a gas heater — there is no pilot or ignition sequence to chase, because a heat pump moves heat from the air using a compressor and refrigerant, closer to how an AC unit works in reverse. Central Texas\'s mild winters actually suit heat pumps well, which is part of why we see more of them every year. We repair heat pumps across Georgetown, Round Rock, and Cedar Park, and as a factory-authorized dealer for Hayward, Pentair, and Jandy, we work on all three brands\' heat pump lines with warranty-eligible parts.',
+    steps: [
+      'Power and thermostat settings first — a unit that will not turn on at all is often a breaker, a set-point below the pool\'s actual temperature, or a safety lockout rather than a failed compressor.',
+      'Airflow around the unit gets checked next. Heat pumps pull in ambient air to extract heat from it, and anything blocking airflow — fencing, plants, debris — can make a healthy unit underperform.',
+      'If the unit runs but is not heating, we check the compressor and refrigerant circuit — this is specialized diagnostic work, not a homeowner check, since it involves sealed refrigerant components.',
+      'We set honest expectations on speed: heat pumps warm a pool gradually over a day or more, not in the hour or two a gas heater can manage. A slow rise in temperature is normal operation, not a sign of a problem.',
+    ],
+    faq: [
+      {
+        q: 'Is a heat pump or gas heater better for a Central Texas pool?',
+        a: 'Heat pumps cost less to run here specifically because our winters are mild enough for them to stay efficient most of the season, but they heat slowly. Gas heaters heat fast but cost more per hour to run. Many owners use a heat pump for baseline warmth and lean on other methods for a quick pre-swim boost.',
+      },
+      {
+        q: 'My heat pump runs constantly but the water barely warms. Is that normal?',
+        a: 'Some run time is expected — heat pumps work gradually. But if it is running most of the day with minimal temperature gain, that usually points to a refrigerant or compressor issue worth a diagnostic visit rather than more patience.',
+      },
+    ],
+  },
 ];
 
 export const CITY_SERVICES = SERVICES.filter((s) => s.hasCityPages);

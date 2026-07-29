@@ -36,6 +36,46 @@ export const CITIES = [
           a: 'Classic autofill masking. Shut the autofill off for 24 hours and watch the level against a bucket on the top step. If the pool outdrops the bucket, call us — that is a real leak, found early.',
         },
       },
+      'pool-filter-repair': {
+        intro:
+          'Sun City alone put hundreds of filters into service within a few years of each other, and our hard, limestone-fed water scales cartridge pleats and DE grids faster than the manufacturer’s general guidance assumes. Add Georgetown’s long, hot run season and filters here work harder than the same equipment in a milder climate.',
+        local:
+          'The pattern we see most in Georgetown’s older neighborhoods off Williams Drive: a sand or DE filter original to the pool, now decades old, with a multiport valve that has started sticking between settings. Cartridge systems in newer builds fare better but still need more frequent cleaning here than package literature suggests. We carry Hayward, Pentair, and Jandy cartridges and grids on the truck as a factory-authorized dealer.',
+        faq: {
+          q: 'Why does my filter need cleaning so much more often than the manual says?',
+          a: 'Georgetown’s water is genuinely harder than most manufacturer guidance assumes. Mineral scale builds on cartridge pleats and DE grids faster here, so a cleaning interval that works in a milder-water region often needs to be cut down for Central Texas.',
+        },
+      },
+      'pool-automation-plumbing': {
+        intro:
+          'Sun City’s gated layout makes app-based automation genuinely useful — residents who split time between Georgetown and elsewhere like being able to check and run their pool remotely rather than relying on a timer at the pad. We repair and retrofit automation systems and plumbing across Georgetown as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The most common Georgetown call is a spa/pool valve that will not switch on command — usually the actuator, not the valve body, and a quick fix once diagnosed. In the older neighborhoods off Austin Avenue, we also see plumbing manifolds that were never set up for automation at all, which is a retrofit conversation rather than a repair.',
+        faq: {
+          q: 'Can Sun City gate staff let your tech in if I am not home?',
+          a: 'Yes — give the gate our name and number when you book, Emergency Pools, (512) 764-9867, the same way you would for any other appointment, and the tech handles the rest.',
+        },
+      },
+      'uv-ozone-sanitizer-repair': {
+        intro:
+          'Georgetown’s hard water is doubly hard on UV systems — the same minerals that scale filters also build up on the quartz sleeve around the UV bulb, blocking the light before the bulb itself has even reached the end of its rated life. We service UV and ozone systems across Georgetown as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'Sun City owners in particular lean toward UV and ozone systems, since they cut down on the hands-on chemical management a more chlorine-reliant pool demands. When chlorine demand creeps up despite normal dosing, a scaled sleeve or an expired bulb — not a chemistry mistake — is usually the actual cause.',
+        faq: {
+          q: 'My UV system is on but chlorine use has still gone up. Why?',
+          a: 'Check the sleeve before assuming the bulb: Georgetown’s hard water scales the quartz sleeve around the bulb, which blocks UV output even when the bulb itself is fine. We check both during a service visit.',
+        },
+      },
+      'pool-heat-pump-repair': {
+        intro:
+          'Georgetown’s winters are mild enough that a heat pump can realistically extend swim season well into spring and fall, which is part of why we install and repair more of them here every year. We service heat pumps across Georgetown as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'Sun City residents swimming on a daily routine are the most common heat-pump callers — a unit that used to hold a comfortable morning temperature and now cannot keep up is worth a diagnostic look at the compressor and refrigerant circuit before assuming it needs full replacement.',
+        faq: {
+          q: 'Will a heat pump actually keep up with year-round swimming in Georgetown?',
+          a: 'For most of the year, yes — our winters are mild enough that a properly sized heat pump holds a comfortable swimming temperature. The coldest snaps may still need a boost, which is worth discussing before you buy based on your swim habits.',
+        },
+      },
     },
   },
   {
@@ -71,6 +111,46 @@ export const CITIES = [
         faq: {
           q: 'The pool only loses water when the pump runs. What does that mean?',
           a: 'That points at a pressure-side plumbing leak rather than the shell — water being pushed out through a break underground. It is exactly what pressure testing isolates, and often the repair is far more contained than people fear.',
+        },
+      },
+      'pool-filter-repair': {
+        intro:
+          'Round Rock filter calls follow the same age split as pump calls: newer DE and cartridge systems in Teravista and Walsh Ranch versus older sand filters in the established neighborhoods off Gattis School and Sam Bass. Both fight the same hard water and long Texas run season underneath.',
+        local:
+          'The newer-build complaint is usually pressure climbing faster than expected on a cartridge system less than a few years old — often a cleaning-interval problem, not a defect, since our water scales pleats faster than manufacturer guidance assumes. On older sand filters, a stuck multiport valve is the most common culprit behind flow that never quite comes back after backwashing.',
+        faq: {
+          q: 'My newer cartridge filter is already losing pressure fast. Is that normal?',
+          a: 'It can be — Central Texas water scales cartridge media faster than the mild-climate cleaning schedules printed in most manuals. If cleaning restores pressure reliably, that is normal here; if it does not, the media itself may need replacing.',
+        },
+      },
+      'pool-automation-plumbing': {
+        intro:
+          'Round Rock’s newer subdivisions, Teravista and Walsh Ranch especially, tend to ship with Pentair or Hayward automation already installed, while the older neighborhoods off Sam Bass more often run on manual valves and timers. We repair and retrofit automation and plumbing across Round Rock as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The most common automation call here is a panel or app that has lost communication with the equipment pad after a Wi-Fi router change or a power blip — usually a reset, not a hardware failure. On older plumbing, we occasionally find manifolds that were capped off during a past renovation and never properly reconnected, which shows up as one zone of the pool getting weak flow.',
+        faq: {
+          q: 'My automation stopped responding after we changed internet providers. Is that connected?',
+          a: 'Very likely — most app-based systems need to be reconnected to a new network name or password after a router change. We can walk you through it by phone or handle it during a visit.',
+        },
+      },
+      'uv-ozone-sanitizer-repair': {
+        intro:
+          'A growing share of new construction in Teravista and Walsh Ranch ships with a UV or ozone system already installed, which is different from the older parts of Round Rock where retrofit is more common. We service both across Round Rock as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'On newer builds, the most common issue is simply an expired UV bulb nobody flagged — the system still runs and looks normal, so nobody notices until chlorine demand quietly climbs. We check bulb hours against the manufacturer schedule rather than relying on how the unit looks.',
+        faq: {
+          q: 'How would I even know my UV bulb has expired if the unit still runs?',
+          a: 'You mostly would not, by looking — bulb output fades before the bulb visibly fails, and the housing keeps running normally either way. Tracking install date against the rated service life is the only reliable way to know.',
+        },
+      },
+      'pool-heat-pump-repair': {
+        intro:
+          'Round Rock’s newer, energy-conscious builds increasingly pair a variable-speed pump with a heat pump from the start, aiming to keep operating costs low year-round. We service heat pumps across Round Rock as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The calls we get most are from owners who expected gas-heater speed from a heat pump and are surprised by the slower, steadier warm-up — that is normal operation, not a fault. When a heat pump genuinely underperforms its own history, airflow blockage around the unit or a refrigerant issue is the more likely explanation.',
+        faq: {
+          q: 'We just moved in and the heat pump seems slow. Is it broken?',
+          a: 'Probably not — heat pumps warm a pool gradually over a day or more by design, unlike a gas heater. If it is running constantly with almost no temperature gain over that time, that is when it is worth a diagnostic look.',
         },
       },
     },
@@ -110,6 +190,46 @@ export const CITIES = [
           a: 'Very possibly — an autofill hides water loss by quietly refilling the pool, so the level never looks low even while you are paying for the leak. Shutting the autofill off for 24 hours and watching the level against a bucket usually settles it.',
         },
       },
+      'pool-filter-repair': {
+        intro:
+          'Killeen’s rental-heavy market means filters here often go a season or two between anyone actually checking them, since maintenance responsibility can get lost between tenant and owner. We service filters across Killeen as a factory-authorized dealer for Hayward, Pentair, and Jandy, with parts for all three usually on the truck.',
+        local:
+          'For landlords and property managers, the most efficient call is describing the symptom over the phone — high pressure, cloudy water despite chlorine — and letting us diagnose cartridge, DE, or sand issues on site without you needing to be there. We can invoice the owner while working directly with whoever is at the property.',
+        faq: {
+          q: 'Can you diagnose a filter problem without the owner being present?',
+          a: 'Yes — give us the property details and owner contact info when you book, and we can work with a tenant or property manager on-site while invoicing goes straight to the owner.',
+        },
+      },
+      'pool-automation-plumbing': {
+        intro:
+          'For Killeen owners dealing with deployments and PCS moves, remote automation is less a luxury and more a genuine need — being able to check on a property\'s pool from anywhere matters when you cannot swing by yourself. We install, retrofit, and repair automation and plumbing across Killeen as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The most common call is an app or panel that has gone unresponsive after months of a property sitting unattended — often just a network or power-cycle issue once someone is finally on-site to check it, not a failed component. We also handle plumbing left in an unknown state by a previous owner or tenant.',
+        faq: {
+          q: 'I am deployed or PCSing and cannot check the pool myself. Can you help remotely?',
+          a: 'We can diagnose automation issues and coordinate with a property manager, family member, or tenant on-site, and get you set up with remote monitoring so you can check your pool\'s status from anywhere going forward.',
+        },
+      },
+      'uv-ozone-sanitizer-repair': {
+        intro:
+          'UV and ozone systems appeal to Killeen landlords for a practical reason: they reduce how closely someone needs to manage chlorine between visits, which matters when a property sits between tenants or an owner is stationed elsewhere. We service UV and ozone systems across Killeen as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'On properties that changed hands or tenants recently, we often find a UV bulb well past its rated life with nobody aware, since the housing keeps running and looks normal regardless. Checking install date against rated hours is standard on our first visit to any inherited or newly managed property.',
+        faq: {
+          q: 'The previous tenant never mentioned the UV system. How do I know if it still works?',
+          a: 'A bulb well past its service life still looks and runs normally, so appearance will not tell you. We check the install date and hours against the manufacturer\'s rated life during a visit to give you a real answer.',
+        },
+      },
+      'pool-heat-pump-repair': {
+        intro:
+          'Killeen’s mild winters make a heat pump a reasonable investment for owners who want a longer swim season without gas-heater running costs, and we are seeing more of them installed in newer construction around town. We service heat pumps across Killeen as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'On rental properties, the most common issue is a unit nobody has looked at in a while — airflow around the pad gets blocked by overgrowth or storage, quietly reducing performance in a way that looks like a failing unit but is really a maintenance gap. We check clearance first before assuming compressor trouble.',
+        faq: {
+          q: 'Our heat pump barely heats the pool anymore. What should we check first?',
+          a: 'Airflow clearance around the unit is the first thing worth checking — anything blocking air intake can quietly cut performance over time. If clearance is fine and performance is still poor, that points toward the compressor or refrigerant circuit instead.',
+        },
+      },
     },
   },
   {
@@ -145,6 +265,46 @@ export const CITIES = [
         faq: {
           q: 'The pool only drops water when the pump is running. What does that tell you?',
           a: 'That is a strong sign of a pressure-side plumbing leak — water being pushed out through a break underground rather than a shell leak. It is exactly the kind of thing pressure testing isolates quickly, often to a single section of pipe.',
+        },
+      },
+      'pool-filter-repair': {
+        intro:
+          'Harker Heights filters split along the same lines as everything else here — newer cartridge and DE systems off FM 2410 versus older sand filters near the Fort Cavazos gate. We service all three types across Harker Heights as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'On the newer end of town, cartridge filters tend to need cleaning more often than owners expect, since our hard water scales pleats faster than mild-climate guidance assumes. Closer to the gate, older sand filters more often need a multiport valve rebuild than a full tank replacement — worth confirming before assuming the filter itself is done.',
+        faq: {
+          q: 'How do I tell if my sand filter needs a new valve or a whole new filter?',
+          a: 'A valve that sticks between settings or will not seal fully in backwash mode is usually a rebuildable part on its own, separate from the tank and sand media. We check the valve first since it is the far cheaper fix when it is the actual cause.',
+        },
+      },
+      'pool-automation-plumbing': {
+        intro:
+          'Harker Heights’ growth along FM 2410 means a lot of newer homes already have Pentair or Hayward automation installed from the builder, while older streets near the gate more often run manual equipment. We repair and retrofit automation and plumbing across Harker Heights as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The most common call on newer systems is an app that will not connect after a router or provider change — usually a quick reset once we are on-site. On older plumbing near the gate, we sometimes find a spa valve that was manually capped years ago and never reconnected to automation when it was later added.',
+        faq: {
+          q: 'Can automation be added to an older pool that has never had it?',
+          a: 'Yes — Hayward, Pentair, and Jandy automation systems can retrofit onto most existing plumbing and equipment. We look at what you have and recommend a system that works with it rather than requiring a full equipment replacement.',
+        },
+      },
+      'uv-ozone-sanitizer-repair': {
+        intro:
+          'Weekend trips to Belton and Stillhouse Hollow mean a fair amount of organic and lake-water debris makes its way into Harker Heights pools, which raises chlorine demand beyond what a typical suburban pool sees. UV and ozone systems help offset that load — we service both across Harker Heights as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'When chlorine demand spikes after a weekend of heavy pool use, a working UV or ozone system should visibly ease it back down within a few days. If it does not, checking the bulb hours or ozone generator output — rather than adding more chlorine — is usually the faster fix.',
+        faq: {
+          q: 'Chlorine demand spikes every weekend after we use the pool a lot. Can UV help?',
+          a: 'Yes, that is exactly the situation UV and ozone systems help with — they reduce the chlorine load your pool needs to handle heavy use. If your system already has one and demand still spikes, it is worth checking bulb life or generator output.',
+        },
+      },
+      'pool-heat-pump-repair': {
+        intro:
+          'Harker Heights’ mild Central Texas winters make heat pumps a practical way to stretch swim season into spring and fall without gas-heater running costs, and newer construction along FM 2410 increasingly ships with one installed. We service heat pumps across Harker Heights as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The most common issue we find isn’t the unit itself but its surroundings — new landscaping or fencing installed after the heat pump can restrict the airflow it needs to work efficiently. Checking clearance around the unit is the first step before assuming a compressor problem.',
+        faq: {
+          q: 'We landscaped recently and the heat pump seems weaker. Could that be related?',
+          a: 'It could be — heat pumps need clear airflow around the unit to pull heat from the air efficiently. New fencing, plants, or storage placed too close can measurably reduce performance without the unit itself being damaged.',
         },
       },
     },
@@ -184,6 +344,46 @@ export const CITIES = [
           a: 'The bucket test settles it: put a bucket of water on the top step next to the pool. If the pool drops faster than the bucket over a couple of days, that is a real leak, not evaporation — and we can take it from there.',
         },
       },
+      'pool-filter-repair': {
+        intro:
+          'Temple’s filter calls split by neighborhood age, same as everything else here — newer cartridge and DE systems in west Temple’s new subdivisions, older sand filters closer to downtown. We service all three types across Temple as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'Busy households near the Baylor Scott & White medical campus, often working irregular hospital shifts, tend to notice filter problems late simply because nobody had time to check the pressure gauge — by the time it is caught, cleaning alone sometimes is not enough and the media needs replacing. Checking pressure on a regular schedule catches it earlier and cheaper.',
+        faq: {
+          q: 'I do not have time to check my filter regularly. What is the risk of skipping it?',
+          a: 'A filter running on climbing pressure for weeks works harder and wears out faster, and can let water quality slip without an obvious warning sign. If checking it yourself is not realistic, folding a filter check into a weekly or biweekly service visit solves that without adding to your plate.',
+        },
+      },
+      'pool-automation-plumbing': {
+        intro:
+          'Temple’s new west-side subdivisions increasingly come with Pentair or Hayward automation from the builder, appealing to residents whose work schedules — especially around the Baylor Scott & White medical campus — do not leave much time for hands-on pool management. We repair and retrofit automation and plumbing across Temple as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'The most common call is straightforward: an app or panel that stopped responding after a network change, or a valve that will not switch on schedule. In Temple’s older downtown-area homes, we more often handle first-time automation retrofits onto plumbing that was never set up for it.',
+        faq: {
+          q: 'Can automation run my pool on a schedule if I work irregular hours?',
+          a: 'That is exactly what it is built for — set schedules for filtration, cleaning cycles, and heating that run regardless of your work hours, with the app giving you a quick status check whenever you have a moment.',
+        },
+      },
+      'uv-ozone-sanitizer-repair': {
+        intro:
+          'For Temple residents working demanding or irregular schedules around the Baylor Scott & White medical campus, UV and ozone systems appeal for the same reason automation does — less hands-on chemical management required to keep the water right. We service both across Temple as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'When chlorine demand creeps up in a Temple pool despite a UV or ozone system being installed, our hard water scaling the quartz sleeve is the most common cause we find, followed by a bulb simply past its rated life. Both are quick checks on a service visit.',
+        faq: {
+          q: 'I installed UV specifically to spend less time on pool chemistry. Is it working?',
+          a: 'If chlorine demand has meaningfully eased since installation, yes. If it has crept back up, a scaled quartz sleeve or an expired bulb are the most common reasons — both are quick to check and correct.',
+        },
+      },
+      'pool-heat-pump-repair': {
+        intro:
+          'Temple’s mild winters make heat pumps a practical choice for extending swim season, and new construction on the west side increasingly builds them in from the start rather than adding gas heat. We service heat pumps across Temple as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'For residents with unpredictable schedules around the medical campus, a heat pump paired with automation means the pool can hold a target temperature without anyone needing to manually start a heater before a rare free afternoon. When one underperforms, airflow clearance and refrigerant issues are the first two things we check.',
+        faq: {
+          q: 'Can I set a heat pump to just maintain a temperature automatically?',
+          a: 'Yes — paired with an automation system, a heat pump can hold a target temperature on its own schedule, so the pool is ready when you have time rather than requiring you to plan ahead and turn it on manually.',
+        },
+      },
     },
   },
   {
@@ -219,6 +419,46 @@ export const CITIES = [
         faq: {
           q: 'Is a leaking light fixture dangerous?',
           a: 'The leak itself is a water-loss problem, not a shock hazard when equipment is properly bonded and code-compliant — but a wet niche is worth a professional look for both reasons. Dye testing at the niche confirms it fast, and the repair is routine.',
+        },
+      },
+      'pool-filter-repair': {
+        intro:
+          'Cedar Park’s spring oak pollen hits filters as hard as it hits pumps — cartridges and DE grids packed with pollen and tassels lose flow fast, and owners often blame the pump when the filter is actually the bottleneck. We service filters across Cedar Park as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'If your filter pressure spikes every spring around the same time, that is pollen, not a failing filter — a thorough cleaning during pollen season, more frequent than the rest of the year, usually solves it without replacing anything. In shaded pools near the greenbelts, organic debris adds to that same seasonal load.',
+        faq: {
+          q: 'My filter pressure spikes every spring. Is that a sign I need a new filter?',
+          a: 'Usually not — that is Cedar Park’s oak pollen season packing the filter media faster than normal. A more frequent cleaning schedule through spring typically resolves it without needing to replace the filter itself.',
+        },
+      },
+      'pool-automation-plumbing': {
+        intro:
+          'Cedar Park’s mix of established neighborhoods like Buttercup Creek and newer builds near Ranch at Brushy Creek means both older manual plumbing and newer automated systems are common here. We repair and retrofit automation and plumbing across Cedar Park as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'Spring pollen causes an automation-adjacent problem worth knowing about: a packed skimmer or pump basket can trip a variable-speed drive\'s flow protection, which then shows up as an "automation problem" on the app when the actual cause is upstream. We check the whole flow path, not just the panel, before assuming a hardware fault.',
+        faq: {
+          q: 'My automation system is showing a flow error every spring. Is that the panel?',
+          a: 'Probably not — Cedar Park\'s oak pollen season packs baskets and filters enough to trigger flow-protection errors on the panel even when the automation hardware itself is fine. Clearing baskets first is worth trying before assuming a panel fault.',
+        },
+      },
+      'uv-ozone-sanitizer-repair': {
+        intro:
+          'Shaded pools under Cedar Park’s mature live oaks collect more organic debris than pools in full sun, which raises the chlorine demand needed to keep water clear. UV and ozone systems help offset that load — we service both across Cedar Park as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'On heavily shaded pools near the greenbelts, we recommend checking UV and ozone performance specifically during peak leaf-drop and pollen seasons, since that is when the organic debris load — and the chlorine demand it drives — peaks for the year.',
+        faq: {
+          q: 'Does a shaded pool need UV or ozone more than a sunny one?',
+          a: 'It benefits more, generally — shaded pools collect more organic debris, which raises chlorine demand, and a working UV or ozone system offsets that without requiring more chemical. It is not required, but it pulls more weight in a shaded, debris-heavy pool.',
+        },
+      },
+      'pool-heat-pump-repair': {
+        intro:
+          'Cedar Park’s shaded pools already run cooler than pools in full sun, which makes a heat pump a natural pairing for owners who want to extend the swim season further into spring and fall. We service heat pumps across Cedar Park as a factory-authorized dealer for Hayward, Pentair, and Jandy.',
+        local:
+          'On heavily shaded properties, a heat pump sometimes runs longer than expected simply because the pool starts cooler to begin with — that is normal, not a sign of trouble. Genuine underperformance is more often airflow blockage from nearby trees and greenbelt growth than a mechanical fault.',
+        faq: {
+          q: 'Does pool shade affect how well a heat pump works?',
+          a: 'It affects run time more than performance — a shaded pool starts cooler, so the heat pump runs longer to reach the same temperature. That is expected behavior. Nearby trees blocking airflow to the unit itself is a separate issue worth checking if performance seems genuinely off.',
         },
       },
     },
