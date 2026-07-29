@@ -21,11 +21,23 @@ export function getStaticPaths() {
 const { service, city, local } = Astro.props;
 const siblings = CITY_SERVICES.filter((s) => s.slug !== service.slug);
 const otherCities = CITIES.filter((c) => c.slug !== city.slug);
+const faqItems = [local.faq, service.faq[0]];
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
 ---
 
 <Base
-  title={`${service.phrase} ${city.name} TX | Emergency Pools`}
-  description={`${service.phrase} in ${city.name}, TX. Technician within 24 hours — often same-day. Honest diagnosis, service call fee credited toward the repair. Call (512) 764-9867.`}
+  title={`${service.name} in ${city.name}, TX | Emergency Pools`.length > 60
+    ? `${service.name} in ${city.name}, TX`
+    : `${service.name} in ${city.name}, TX | Emergency Pools`}
+  description={`${service.name} in ${city.name}, TX. Technician within 24 hours — often same-day. Call ${SITE.phoneDisplay}.`}
   city={city.name}
 >
   <h1>{service.phrase} in {city.name}, TX</h1>
@@ -47,10 +59,8 @@ const otherCities = CITIES.filter((c) => c.slug !== city.slug);
 
   <section class="faq">
     <h2>Common questions in {city.name}</h2>
-    <h3>{local.faq.q}</h3>
-    <p>{local.faq.a}</p>
     {
-      service.faq.slice(0, 1).map((item) => (
+      faqItems.map((item) => (
         <>
           <h3>{item.q}</h3>
           <p>{item.a}</p>
@@ -58,6 +68,7 @@ const otherCities = CITIES.filter((c) => c.slug !== city.slug);
       ))
     }
   </section>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <h2>Also in {city.name}</h2>
   <ul class="link-grid">

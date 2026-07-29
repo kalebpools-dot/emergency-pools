@@ -13,11 +13,20 @@ export function getStaticPaths() {
 }
 
 const { service } = Astro.props;
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: service.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
 ---
 
 <Base
-  title={`${service.phrase} | Georgetown, Round Rock & Cedar Park | Emergency Pools`}
-  description={`${service.phrase} in Georgetown, Round Rock, and Cedar Park TX. Technician within 24 hours — often same-day. Call (512) 764-9867.`}
+  title={`${service.name} | Emergency Pools`}
+  description={`${service.name} in Georgetown, Round Rock, and Cedar Park TX. Technician within 24 hours — often same-day. Call ${SITE.phoneDisplay}.`}
 >
   <h1>{service.phrase} — Georgetown, Round Rock &amp; Cedar Park</h1>
 
@@ -62,6 +71,7 @@ const { service } = Astro.props;
       ))
     }
   </section>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <Dispatch problem={service.problem} area={SITE.serviceArea} />
 </Base>

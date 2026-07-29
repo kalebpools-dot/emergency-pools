@@ -2,8 +2,9 @@
 import { SITE } from '../data/site.js';
 import '../styles/global.css';
 
-const { title, description, city = null } = Astro.props;
+const { title, description, city = null, image = null } = Astro.props;
 const canonical = new URL(Astro.url.pathname, SITE.domain).href;
+const ogImage = image ? new URL(image, SITE.domain).href : `${SITE.domain}/favicon.svg`;
 
 const schema = {
   '@context': 'https://schema.org',
@@ -29,6 +30,16 @@ const schema = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
