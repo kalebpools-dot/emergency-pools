@@ -1,0 +1,95 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Pool Pump Tripping the Breaker: Diagnosis Order"
+  description="A pool pump that keeps tripping the breaker points to one of four causes — and this is an electrical job, not a DIY one. Call (512) 764-9867."
+>
+  <h1>Pool pump tripping the breaker: diagnosis order</h1>
+
+  <p>
+    A pool pump that repeatedly trips its breaker usually points to one of four things: an
+    overloaded or aging breaker, moisture in an electrical connection, a failing motor drawing
+    more current than it should, or a short somewhere in the wiring. Unlike most pump problems,
+    this one starts with a strong safety caveat: 240-volt equipment and water in close proximity
+    is not a DIY diagnostic project.
+  </p>
+
+  <Dispatch problem="Pump keeps tripping the breaker" area={SITE.serviceArea} />
+
+  <h2>What's actually happening when a breaker trips</h2>
+  <p>
+    A breaker trips to protect the circuit from drawing more current than it's rated for. When a
+    pump trips its breaker repeatedly, something in the circuit is either drawing abnormal
+    current or creating a short — the breaker doing its job is a warning sign, not the problem
+    itself, which is why simply resetting it repeatedly without diagnosis isn't a real fix.
+  </p>
+
+  <h2>The likely causes, roughly in order of how often we see them</h2>
+  <ol class="steps">
+    <li>
+      <strong>An aging or undersized breaker.</strong> Breakers weaken over time and can start
+      tripping below their rated load even when the pump itself is fine — common on older
+      installations that haven't been updated alongside newer, more powerful pumps.
+    </li>
+    <li>
+      <strong>Moisture in a connection.</strong> Pool equipment pads are exposed to weather and
+      splash, and a compromised seal or connection that lets in moisture can cause intermittent
+      tripping, often worse after rain.
+    </li>
+    <li>
+      <strong>A failing motor.</strong> Worn bearings or a winding fault inside the motor can
+      cause it to draw more current than normal, especially at startup — the pump might run
+      fine for a while after a reset before tripping again.
+    </li>
+    <li>
+      <strong>A short in the wiring.</strong> Damaged insulation anywhere between the panel and
+      the motor can create a short that trips the breaker consistently or unpredictably.
+    </li>
+  </ol>
+
+  <h2>Why this is different from most pump troubleshooting</h2>
+  <p>
+    Most pump issues on this site — humming, shutting off on their own, seized shafts — have a
+    safe visual or manual check a homeowner can do first. Breaker tripping doesn't, because the
+    diagnostic steps involve testing live electrical components in a wet environment. That
+    combination is exactly what electrical safety codes and common sense both warn against for
+    anyone without the right training and equipment.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Immediately, honestly — this is the one pump problem on our guides where we'd tell you not
+    to open anything up yourself. What you can safely do: note when it trips (immediately on
+    startup vs. after running a while), whether it's happened more after rain, and how old the
+    breaker and pump are. That information helps a technician narrow down the cause faster once
+    they arrive. {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Is it safe to just keep resetting the breaker myself?</h3>
+    <p>
+      Occasionally, once, to see if it holds — but a breaker that trips repeatedly is telling you
+      something is wrong, and repeatedly resetting it without diagnosis risks equipment damage or
+      a fire hazard if the cause is a short or a failing motor.
+    </p>
+    <h3>Could this be a GFCI issue instead of the breaker itself?</h3>
+    <p>
+      Possibly — pool circuits are often protected by ground-fault protection in addition to a
+      standard breaker, and a nuisance trip from ground-fault protection can look similar to a
+      standard overload trip. A technician can tell the difference quickly.
+    </p>
+    <h3>If the pump runs fine after a reset, does that mean it's fixed?</h3>
+    <p>
+      Not necessarily — intermittent causes like moisture or a marginal motor winding can
+      produce exactly that pattern: fine for a while, then tripping again. A pump that's tripped
+      more than once deserves a real diagnosis rather than being written off as resolved.
+    </p>
+  </section>
+
+  <Dispatch problem="Pump keeps tripping the breaker" area={SITE.serviceArea} />
+</Base>

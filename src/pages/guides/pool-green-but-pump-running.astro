@@ -1,0 +1,100 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Pool Green But Pump Is Running? Here's Why"
+  description="A running pump moves water — it doesn't sanitize it. The real causes of a green pool with working circulation, in check order. Call (512) 764-9867."
+>
+  <h1>Why is my pool green even though the pump runs?</h1>
+
+  <p>
+    A pump that runs fine only proves water is moving — it says nothing about whether that water
+    is sanitized. Green pools with a healthy pump usually come down to one of four things:
+    chlorine demand outpacing supply, stabilizer (CYA) buildup locking chlorine out, poor
+    filtration despite circulation, or a phosphate load feeding algae faster than chlorine can
+    keep up.
+  </p>
+
+  <Dispatch problem="Pool green despite pump running fine" area={SITE.serviceArea} />
+
+  <h2>The myth: circulation equals sanitation</h2>
+  <p>
+    Circulation and sanitation are two separate jobs. The pump's job is to move water through
+    the filter and past the point where chlorine gets introduced. Whether that chlorine actually
+    kills algae once it's there depends on chemistry — pH, free chlorine level, and stabilizer —
+    none of which the pump controls. A pump can run perfectly for weeks while the water
+    underneath it slowly loses the chemical fight.
+  </p>
+
+  <h2>Check in this order</h2>
+  <ol class="steps">
+    <li>
+      <strong>Free chlorine level.</strong> Test it directly rather than assuming your feeder or
+      chlorinator is dosing correctly. A reading near zero despite regular chemical additions
+      points toward demand or lockout, not a dosing problem.
+    </li>
+    <li>
+      <strong>Stabilizer (CYA).</strong> High CYA from years of trichlor tabs chemically
+      handcuffs chlorine so it can't sanitize even at a normal-looking reading. This is common
+      enough in Central Texas pools that it deserves its own look — see our guide on{' '}
+      <a href="/guides/pool-shock-not-working-cya/">why shocking a pool sometimes fails outright</a>.
+    </li>
+    <li>
+      <strong>Filter condition and actual run time.</strong> A pump that runs on a timer doesn't
+      guarantee the filter is doing its job — high filter pressure, a torn cartridge, or a
+      multiport valve stuck between settings can all let water bypass real filtration while the
+      pump hums along normally.
+    </li>
+    <li>
+      <strong>Phosphate load.</strong> Fertilizer runoff, decaying leaves, and some tap water
+      sources introduce phosphates that feed algae directly. In a phosphate-heavy pool, chlorine
+      is fighting a food source it can't remove on its own.
+    </li>
+  </ol>
+
+  <h2>Why this trips people up</h2>
+  <p>
+    It's intuitive to assume a green pool means broken equipment, because a broken pump is the
+    most visible possible failure. But we run far more service calls where the pump is fine and
+    the chemistry is the actual problem — which is also good news, because chemistry problems are
+    almost always cheaper and faster to fix than equipment failures.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Basic testing — chlorine, pH, and a CYA reading if your kit includes one — is safe and
+    worth doing before you spend on chemicals. Call in a technician once you're past guessing:
+    if CYA is high enough to need a partial drain, if the filter needs inspection you can't do
+    yourself, or if the pool has already gone fully green and you want an honest recovery
+    timeline instead of trial and error. Our{' '}
+    <a href="/guides/neglected-green-pool-recovery/">green-to-clean recovery guide</a> covers
+    what that process actually looks like.
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Could my pump be running but not actually filtering?</h3>
+    <p>
+      Yes — a stuck multiport valve, a torn cartridge, or a badly clogged filter can all let the
+      pump run normally while filtration is compromised. High filter pressure compared to a
+      clean-filter baseline is usually the first clue.
+    </p>
+    <h3>If chlorine reads normal, can the pool still be green from something else?</h3>
+    <p>
+      It can, though it's less common. Phosphate load and early-stage algae that hasn't yet
+      consumed the day's chlorine dose can both produce a green tint even with a chlorine reading
+      that looks acceptable at the moment you test it.
+    </p>
+    <h3>Is a green pool with a running pump more or less urgent than one with a dead pump?</h3>
+    <p>
+      Roughly the same — a dead pump makes things worse faster, but a green pool with working
+      circulation isn't fixing itself either. Both are worth addressing before a Central Texas
+      summer week turns it from cloudy to fully green.
+    </p>
+  </section>
+
+  <Dispatch problem="Pool green despite pump running fine" area={SITE.serviceArea} />
+</Base>

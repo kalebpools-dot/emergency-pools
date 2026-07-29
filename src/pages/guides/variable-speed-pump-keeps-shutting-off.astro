@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Variable-Speed Pump Keeps Shutting Off? Why That's Good"
+  description="A variable-speed pump that stops itself is usually protecting against an air leak or priming issue, not failing outright. What to check first. Call (512) 764-9867."
+>
+  <h1>Why variable-speed pumps shut themselves off (and why that is good)</h1>
+
+  <p>
+    A variable-speed pump that keeps stopping on its own is almost always protecting itself from
+    running dry, not failing outright — modern drives from Pentair and Hayward are built to cut
+    power the moment they detect a priming problem or a suction-side air leak, because running
+    without proper water flow can damage the pump. Replacing a pump that's doing this is usually
+    the wrong fix, because the pump isn't the thing that's broken.
+  </p>
+
+  <Dispatch problem="Variable-speed pump shutting itself off" area={SITE.serviceArea} />
+
+  <h2>What the pump is actually protecting against</h2>
+  <p>
+    Pumps rely on a steady flow of water for lubrication and cooling inside the wet end. A
+    suction-side air leak, a lost prime, or a badly clogged basket all starve the pump of that
+    flow, and a well-designed variable-speed drive will shut down rather than let the pump run
+    dry and damage itself. The self-shutdown is the safety feature working correctly — the real
+    question is what's causing the flow problem underneath it.
+  </p>
+
+  <h2>Check in this order</h2>
+  <ol class="steps">
+    <li>
+      <strong>Water level.</strong> If the pool level has dropped below the skimmer opening, the
+      pump is pulling air along with water — refill the pool and see if the shutdowns stop.
+    </li>
+    <li>
+      <strong>Skimmer and pump baskets.</strong> A fully packed basket restricts flow enough to
+      mimic a priming problem. Clear them and try again.
+    </li>
+    <li>
+      <strong>Pump lid o-ring.</strong> A dried or damaged o-ring on the pump lid is one of the
+      most common sources of a small air leak that's otherwise hard to spot.
+    </li>
+    <li>
+      <strong>Drive fault codes.</strong> Most variable-speed drives display a specific code when
+      they shut down — noting that code before calling saves diagnostic time, since it often
+      points directly at the cause category (flow, priming, or electrical).
+    </li>
+  </ol>
+
+  <h2>Why this gets misdiagnosed as a dead pump</h2>
+  <p>
+    A pump that worked fine yesterday and won't stay on today feels like equipment failure, and
+    it's a reasonable first assumption. But because the underlying cause is almost always
+    upstream — water level, a leak, a clogged basket — swapping the pump for a new one often
+    just recreates the same shutdown pattern on the replacement, because the actual problem was
+    never in the pump itself.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Checking water level and clearing baskets is safe and easy to do yourself. Call in a
+    technician if the pump still shuts down after those checks, if you suspect a suction-side
+    leak in the underground plumbing (see our{' '}
+    <a href="/guides/how-long-should-pool-pump-run-texas/">related guide on pump run time</a>{' '}
+    for how flow problems show up over a full day of operation), or if the drive is showing a
+    fault code you don't recognize. {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>My newer variable-speed pump keeps shutting off by itself — is it already broken?</h3>
+    <p>
+      Usually not. Modern drives are designed to cut power rather than run dry, so a
+      self-stopping pump is often protecting itself from an air leak or priming problem
+      upstream. We diagnose the cause instead of just swapping the pump.
+    </p>
+    <h3>Can a suction-side leak be fixed without digging up plumbing?</h3>
+    <p>
+      Often yes if the leak is at the pump lid, a union fitting, or another accessible point.
+      Underground suction leaks are less common but are found through pressure testing rather
+      than guessing — see our{' '}
+      <a href="/pool-leak-repair/">leak detection and repair page</a> for how that process works.
+    </p>
+    <h3>Should I just turn the pump off until it's diagnosed?</h3>
+    <p>
+      That's reasonable if it's shutting down repeatedly and you're not sure why — running it
+      against a real air leak or low water level for an extended stretch risks further wear, so
+      it's fine to leave it off until someone can look at the cause directly.
+    </p>
+  </section>
+
+  <Dispatch problem="Variable-speed pump shutting itself off" area={SITE.serviceArea} />
+</Base>

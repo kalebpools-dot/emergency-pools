@@ -1,0 +1,101 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="How Long Should a Pool Pump Run in Texas?"
+  description="The one-turnover rule for pool pump run time, adjusted for Central Texas summers and variable-speed schedules. Call (512) 764-9867."
+>
+  <h1>How long should a pool pump run per day in Central Texas?</h1>
+
+  <p>
+    The standard rule of thumb is running the pump long enough to turn over (filter) the pool's
+    entire water volume roughly once a day, but in a Central Texas summer, that often means 8 to
+    12 hours rather than the 6 hours sometimes quoted nationally — higher heat accelerates algae
+    growth and chlorine burn-off enough that a single turnover a day, done quickly, may not be
+    keeping up.
+  </p>
+
+  <Dispatch problem="Not sure the pump is running long enough" area={SITE.serviceArea} />
+
+  <h2>Where the "one turnover a day" rule comes from</h2>
+  <p>
+    A turnover is the time it takes your pump and filter to cycle the pool's total water volume
+    through the system once. It's a reasonable baseline for water clarity in mild conditions, but
+    it was never a Texas-specific number — it's a national average that doesn't account for how
+    much faster heat drives chemical demand and biological growth here.
+  </p>
+
+  <h2>Adjusting the number for Texas seasons</h2>
+  <ol class="steps">
+    <li>
+      <strong>Summer.</strong> 8–12 hours a day is typical for single-speed pumps in peak heat.
+      Pools with heavy bather load or a lot of tree debris may need the higher end of that range.
+    </li>
+    <li>
+      <strong>Spring and fall.</strong> 6–8 hours is usually enough as temperatures moderate,
+      though spring oak pollen (see our{' '}
+      <a href="/pool-pump-repair/cedar-park/">Cedar Park pump repair page</a> for how pollen
+      season affects equipment) can mean more frequent basket checks even if total run time drops.
+    </li>
+    <li>
+      <strong>Winter.</strong> 4–6 hours is often sufficient in Central Texas, since we rarely
+      see extended freezes that would require different run strategies entirely.
+    </li>
+  </ol>
+
+  <h2>How variable-speed changes the answer</h2>
+  <p>
+    A variable-speed pump changes the question from "how many hours" to "how many hours at what
+    speed." Running longer at a lower speed can achieve the same or better filtration than fewer
+    hours at full power, while using less electricity — see our guide on{' '}
+    <a href="/guides/variable-speed-vs-single-speed-pool-pump-texas/">variable-speed payback
+    math</a> for how that trade-off plays out over a full run season. In practice, many
+    variable-speed schedules run 10–12 hours a day at low speed with a shorter high-speed burst
+    for tasks like vacuuming or heating.
+  </p>
+
+  <h2>Signs your current run time is too short</h2>
+  <p>
+    Chlorine that drops faster than expected between tests, filter pressure that climbs slower
+    than it should (a sign water isn't moving through it enough), or cloudiness that returns
+    despite otherwise normal chemistry (see our{' '}
+    <a href="/guides/cloudy-pool-water-causes/">cloudy pool water guide</a>) are all signs worth
+    checking your run schedule against, not just your chemical routine.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Adjusting your pump timer is safe to experiment with yourself. Call in a technician if you've
+    increased run time and the pool still isn't holding chemistry — that usually points to an
+    equipment or chemistry issue beyond scheduling, like the CYA buildup covered in our{' '}
+    <a href="/guides/pool-shock-not-working-cya/">shock treatment guide</a>, rather than something
+    more run time alone will fix. {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Is it more expensive to run the pump longer each day?</h3>
+    <p>
+      On a single-speed pump, yes, roughly proportional to the hours added. On a variable-speed
+      pump, running longer at a lower speed can actually cost less than fewer hours at full
+      power — see our variable-speed guide for the underlying math.
+    </p>
+    <h3>Can I split run time into two shorter sessions instead of one long one?</h3>
+    <p>
+      Yes, and some pools benefit from a split schedule — for example, a shorter midday run plus
+      a longer overnight run — as long as the total daily runtime still meets your pool's needs
+      for the season.
+    </p>
+    <h3>Does a bigger pump mean I can run it for less time?</h3>
+    <p>
+      Not necessarily — turnover time depends on the pump's actual flow rate relative to your
+      pool's volume, not horsepower alone. A correctly sized pump for your pool is what
+      determines the real number, which is part of what we check during a diagnosis visit.
+    </p>
+  </section>
+
+  <Dispatch problem="Not sure the pump is running long enough" area={SITE.serviceArea} />
+</Base>

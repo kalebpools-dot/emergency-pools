@@ -1,0 +1,99 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Pool Pump Repair vs Replace: The 5-6 Year Rule"
+  description="A straightforward rule for deciding whether to repair or replace a pool pump, and why warranty-eligible parts matter. Call (512) 764-9867."
+>
+  <h1>Pool pump repair vs replacement: the 5–6 year rule</h1>
+
+  <p>
+    Our rule of thumb: if the wet end is sound and the motor is under 5–6 years old, a repair —
+    capacitor, seal, or bearing job — is usually the right call. Past that age, especially on an
+    older single-speed motor, replacement is often the smarter spend, both because the motor is
+    closer to the end of its practical life and because upgrading to variable-speed at that point
+    can offset a real share of the cost through energy savings.
+  </p>
+
+  <Dispatch problem="Deciding whether to repair or replace a pump" area={SITE.serviceArea} />
+
+  <h2>Why age is the deciding factor, not just the current symptom</h2>
+  <p>
+    Any single failure — a capacitor, a seal, even bearings — can usually be repaired on its own
+    regardless of the motor's age. The real question age answers is a different one: on an older
+    motor, is this failure likely to be followed by another one soon after? A capacitor swap on a
+    9-year-old single-speed motor might hold for a while, but the odds of another
+    part failing within the next year or two go up simply because the motor has more accumulated
+    run hours behind it.
+  </p>
+
+  <h2>The decision, step by step</h2>
+  <ol class="steps">
+    <li>
+      <strong>Confirm the wet end is sound.</strong> If the impeller, seal plate, and housing are
+      in good condition, that's a strong point in favor of repair regardless of motor age — the
+      wet end is often the more expensive component to replace.
+    </li>
+    <li>
+      <strong>Check the motor's age and history.</strong> Under 5–6 years with no prior major
+      repairs generally favors fixing the current issue. Older, or with a history of repeat
+      repairs, favors replacement.
+    </li>
+    <li>
+      <strong>Consider whether this is a natural upgrade point.</strong> If replacement is on the
+      table anyway, that's the moment to weigh variable-speed against single-speed — see our{' '}
+      <a href="/guides/variable-speed-vs-single-speed-pool-pump-texas/">payback math guide</a>{' '}
+      for how that comparison plays out in Central Texas.
+    </li>
+    <li>
+      <strong>Check warranty eligibility.</strong> Factory-authorized replacement parts and
+      pumps keep the manufacturer warranty intact — equipment sourced outside authorized
+      channels often isn't warranty-eligible, which matters if something fails again soon after.
+    </li>
+  </ol>
+
+  <h2>Why we don't default to "just replace it"</h2>
+  <p>
+    Recommending a full pump replacement is often the easier, higher-ticket answer, but it isn't
+    always the right one — plenty of pumps with one failed part have years of good service left
+    in them. Being backed by a factory-authorized dealer for Hayward, Pentair, and Jandy means we
+    have direct access to genuine replacement parts either way, so the repair-vs-replace call can
+    be made on what's actually best for your pump, not on which parts happen to be easiest to
+    source.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Diagnosing whether the wet end is sound, checking the true age and condition of a motor, and
+    verifying warranty status on existing equipment all require an in-person look — this isn't a
+    decision to make from a phone description alone if you want it to be the right one.
+    {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Is it worth repairing or replacing the motor?</h3>
+    <p>
+      Our rule: if the wet end is sound and the motor is under 5–6 years old, a capacitor, seal,
+      or bearing job makes sense. Older single-speed motors are often worth upgrading to
+      variable-speed — the energy savings in Texas run seasons pay for the swap.
+    </p>
+    <h3>Do you install equipment I bought online?</h3>
+    <p>
+      We can, but know the tradeoff first: many manufacturers void or reduce warranties on
+      equipment not sold through authorized channels. We will tell you what your specific unit
+      is worth installing.
+    </p>
+    <h3>Can a repaired pump fail again soon after?</h3>
+    <p>
+      It's possible with any mechanical repair, which is exactly why motor age and wet-end
+      condition factor into the recommendation — a repair on a sound, younger motor is a
+      reliable fix, not a stopgap.
+    </p>
+  </section>
+
+  <Dispatch problem="Deciding whether to repair or replace a pump" area={SITE.serviceArea} />
+</Base>

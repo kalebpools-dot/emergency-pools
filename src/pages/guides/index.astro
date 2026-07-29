@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../data/site.js';
+import { GUIDES } from '../../data/guides.js';
+
+const categories = [...new Set(GUIDES.map((g) => g.category))];
+---
+
+<Base
+  title="Pool Care Guides | Emergency Pools"
+  description="Straight answers on pool cleaning, chemistry, and pump repair for Georgetown, Round Rock, Cedar Park, and Central Texas. Call (512) 764-9867."
+>
+  <h1>Pool care guides</h1>
+  <p>
+    Straight answers to the questions we get on the phone every week — pool cleaning,
+    chemistry, and pump repair, written for Central Texas conditions. If your problem needs
+    a technician today, {SITE.responsePromise.toLowerCase()}:{' '}
+    <a href={SITE.phoneHref}>{SITE.phoneDisplay}</a>.
+  </p>
+
+  {
+    categories.map((cat) => (
+      <>
+        <h2>{cat}</h2>
+        <ul class="link-grid">
+          {GUIDES.filter((g) => g.category === cat).map((g) => (
+            <li>
+              <a href={`/guides/${g.slug}/`}>
+                {g.title}
+                <small>{g.summary}</small>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+</Base>

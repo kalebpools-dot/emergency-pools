@@ -1,0 +1,111 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Pool Cleaning Cost in Central Texas (2026 Guide)"
+  description="Industry-average pool cleaning costs for Central Texas: weekly service, one-time cleanups, and green-pool recovery. Call (512) 764-9867."
+>
+  <h1>How much does pool cleaning cost in Central Texas? (2026 pricing guide)</h1>
+
+  <p>
+    Weekly pool cleaning in Central Texas typically runs in the range most homeowners see
+    nationally for routine service, with one-time cleanups and green-pool recovery costing more
+    depending on how far gone the water is. The real number for your pool depends on size,
+    current condition, and whether the equipment is working — which is exactly why a phone quote
+    without seeing the pool is usually a guess dressed up as a number.
+  </p>
+
+  <Dispatch problem="Not sure what your cleanup or repair will cost" area={SITE.serviceArea} />
+
+  <h2>What "pool cleaning" actually covers</h2>
+  <p>
+    Recurring pool cleaning is not just skimming leaves. A real visit covers water testing and
+    chemical balancing, brushing walls and steps, vacuuming the floor, emptying skimmer and pump
+    baskets, checking filter pressure, and a visual check of the equipment pad. Skip any one of
+    those for a few weeks in a Texas summer and the others start compounding — a dirty filter
+    reduces circulation, reduced circulation lets chlorine demand outpace supply, and that is how
+    a "just a little cloudy" pool becomes a green one.
+  </p>
+
+  <h2>What moves the price</h2>
+  <ol class="steps">
+    <li>
+      <strong>Pool size and surface area.</strong> A larger pool takes longer to brush and vacuum
+      and needs more chemical volume per treatment — the single biggest driver of routine cost.
+    </li>
+    <li>
+      <strong>Current condition.</strong> A well-maintained pool is a quick weekly visit. A pool
+      that has gone a few weeks without attention needs extra time for algae brushing and
+      chemical correction before it's back to routine.
+    </li>
+    <li>
+      <strong>Water chemistry history.</strong> High stabilizer (CYA) from years of trichlor tabs
+      can mean a partial drain is the honest first step before a cleaning schedule can hold —
+      that changes the first visit's scope even if every visit after is routine.
+    </li>
+    <li>
+      <strong>Equipment condition.</strong> A pool cleaned on schedule but fighting a weak pump or
+      clogged filter will drift dirty between visits no matter how good the cleaning is — the
+      equipment has to be doing its job too.
+    </li>
+  </ol>
+
+  <h2>Rough industry ranges, for context</h2>
+  <p>
+    As general industry averages — not an Emergency Pools quote — routine weekly cleaning for a
+    typical residential pool nationally tends to fall in the low-to-mid hundreds per month, a
+    single one-time cleaning visit is usually priced well below that monthly figure, and a
+    full green-to-clean recovery (see our{' '}
+    <a href="/guides/neglected-green-pool-recovery/">neglected pool recovery guide</a>) can run
+    several times a single visit depending on how much treatment and labor it takes. Central
+    Texas isn't meaningfully cheaper or more expensive than the national picture — what changes
+    the number here is the season: our run of 100°F-plus weeks means algae and evaporation both
+    move faster, so a skipped cleaning costs more to fix than the same skip in a milder climate.
+  </p>
+
+  <h2>Why we quote after a diagnosis, not before</h2>
+  <p>
+    {SITE.feeLine} That is deliberate. A quote given over the phone for a pool nobody has looked
+    at is either padded to cover surprises or too low and gets revised on-site — neither is
+    fair to you. Testing the water and looking at the equipment first means the number you get
+    is the number you pay.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Testing your own water with strips or a basic kit and skimming leaves between visits is
+    perfectly safe to do yourself. Where it's worth calling: any time chemistry keeps drifting
+    despite regular dosing (a sign something upstream is wrong — see our{' '}
+    <a href="/guides/pool-green-but-pump-running/">guide on green pools with a running pump</a>),
+    any time you're chasing green or cloudy water without knowing your CYA level, and any time
+    the equipment itself — pump, filter, heater — is the suspected problem rather than the water.
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Is a cheaper cleaning quote ever a red flag?</h3>
+    <p>
+      Not automatically, but a quote given without anyone looking at your pool or testing the
+      water is worth a second question: what happens if the pool needs more than routine
+      cleaning once someone actually opens it up? {SITE.feeLine}
+    </p>
+    <h3>Does pool size alone determine the price?</h3>
+    <p>
+      It's the biggest factor but not the only one. Two pools of the same size can cost
+      differently to service if one has a chemistry problem or weak equipment and the other
+      doesn't — condition matters as much as square footage.
+    </p>
+    <h3>Is it cheaper to fix a green pool myself before calling?</h3>
+    <p>
+      Usually not, if you don't know your CYA level first. Dumping shock into high-CYA water
+      wastes money on chemical that cannot work — see our guide on{' '}
+      <a href="/guides/pool-shock-not-working-cya/">why shocking a pool sometimes fails outright</a>{' '}
+      before spending on chemicals blind.
+    </p>
+  </section>
+
+  <Dispatch problem="Not sure what your cleanup or repair will cost" area={SITE.serviceArea} />
+</Base>

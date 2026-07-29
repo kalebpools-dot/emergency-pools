@@ -1,0 +1,102 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Pool Pump Humming But Won't Start? What It Means"
+  description="A pool pump that hums but won't start is usually a failed start capacitor — one of the cheapest pool repairs there is. Call (512) 764-9867."
+>
+  <h1>Pool pump humming but not starting: what it means and what it costs</h1>
+
+  <p>
+    A pool pump that hums but won't start is, more often than not, a failed start capacitor —
+    one of the cheapest and fastest repairs in pool service, not a sign the motor is dead. The
+    quick way to tell the difference: with power off at the breaker, spin the motor shaft by
+    hand. If it spins freely, the capacitor is the likely culprit. If it's gritty, stiff, or
+    won't turn, you're looking at a bearing or seal problem instead.
+  </p>
+
+  <Dispatch problem="Pump humming but not starting" area={SITE.serviceArea} />
+
+  <h2>Why a capacitor failure sounds like this</h2>
+  <p>
+    The start capacitor gives the motor the extra torque it needs to begin spinning from a dead
+    stop. When it fails, the motor still receives power — hence the hum — but can't generate
+    enough starting force to actually turn, especially on single-speed motors, which rely
+    heavily on the capacitor for that initial kick. Once it's running, a motor doesn't need the
+    same push, which is why some pumps with a weak capacitor will start fine if you help the
+    shaft spin by hand (not something to try without a technician present).
+  </p>
+
+  <h2>The shaft-spin test, safely</h2>
+  <ol class="steps">
+    <li>
+      <strong>Kill power at the breaker first.</strong> Not the pump's on/off switch — the
+      breaker. This is a non-negotiable safety step before touching anything at the motor.
+    </li>
+    <li>
+      <strong>Locate the motor shaft</strong> at the back of the motor housing, usually with a
+      small slot for a screwdriver.
+    </li>
+    <li>
+      <strong>Turn it by hand.</strong> Free and smooth rotation with only a hum under power
+      points to the capacitor. Gritty, resistant, or seized rotation points to bearings or a
+      worn shaft seal instead.
+    </li>
+    <li>
+      If you're not comfortable doing this yourself, describing the hum and how the pump behaves
+      on a call is enough for us to have a strong idea what we're walking into before we arrive.
+    </li>
+  </ol>
+
+  <h2>What each outcome typically means for cost</h2>
+  <p>
+    A start capacitor replacement is one of the least expensive common pool repairs — it's a
+    small, inexpensive part and a quick swap. A seized shaft pointing to bearings or a seal is a
+    larger job, and if the motor is older, that's often the point where a straight repair-vs-
+    replace conversation makes sense. See our guide on{' '}
+    <a href="/guides/pool-pump-repair-or-replace/">repair vs replacement for pool pumps</a> for
+    how we think about that decision.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Anything past the shaft-spin test — opening the motor housing, testing or replacing a
+    capacitor, or working near the motor's electrical connections — is not a DIY repair.
+    Capacitors can hold a charge even with power off, and motor work involves both electricity
+    and water in close proximity. {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>My pump hums but will not start. Is it dead?</h3>
+    <p>
+      Usually not. A hum with a free-spinning shaft points to a failed start capacitor, one of
+      the cheapest and fastest pool repairs there is. It only means a dead motor when the shaft
+      is seized.
+    </p>
+    <h3>Can a bad capacitor damage the motor if I leave it running (humming) too long?</h3>
+    <p>
+      Yes — a motor that hums under power without actually turning can overheat over time, since
+      it's drawing current without doing mechanical work to dissipate it. Turning it off at the
+      breaker until it's diagnosed is the safer move.
+    </p>
+    <h3>Is it worth replacing the motor instead of just the capacitor?</h3>
+    <p>
+      Not if the wet end and bearings are otherwise sound — a capacitor swap on an
+      otherwise-healthy motor is a small, targeted fix. Replacement becomes the better
+      conversation when the motor is old or the shaft-spin test points to bearings.
+    </p>
+    <h3>Does this apply to variable-speed pumps too?</h3>
+    <p>
+      Variable-speed motors are less commonly a straightforward capacitor issue and more often
+      show drive fault codes instead — see our guide on{' '}
+      <a href="/guides/variable-speed-pump-keeps-shutting-off/">why variable-speed pumps shut
+      themselves off</a> if that matches what you're seeing.
+    </p>
+  </section>
+
+  <Dispatch problem="Pump humming but not starting" area={SITE.serviceArea} />
+</Base>

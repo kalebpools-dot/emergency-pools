@@ -1,0 +1,101 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Why Pool Shock Isn't Working: The CYA Problem"
+  description="If shocking your pool isn't clearing it, high stabilizer (CYA) is the most likely reason. What CYA does and the honest fix. Call (512) 764-9867."
+>
+  <h1>Why shocking your pool didn't work (the CYA problem)</h1>
+
+  <p>
+    If you've shocked a green pool more than once with no real change, the most likely cause
+    isn't the amount of shock — it's stabilizer, also called CYA (cyanuric acid), built up so
+    high that chlorine is chemically locked out of doing its job. More shock doesn't fix that. In
+    fact, past a certain CYA level, no amount of chlorine can work, and the honest fix usually
+    starts with removing water, not adding chemical.
+  </p>
+
+  <Dispatch problem="Shock treatment not clearing a green pool" area={SITE.serviceArea} />
+
+  <h2>What CYA actually does</h2>
+  <p>
+    Stabilizer protects chlorine from breaking down too fast in direct sunlight — which matters
+    in Texas, where UV would otherwise burn off chlorine within hours. Trichlor tabs, the most
+    common chlorine source for automatic feeders, add stabilizer every time they add chlorine.
+    Used for a few years without ever being diluted, CYA quietly climbs season after season,
+    because it doesn't break down or evaporate — it only leaves the water when water leaves the
+    pool.
+  </p>
+
+  <h2>Why high CYA disables chlorine</h2>
+  <p>
+    Think of CYA as sunscreen for chlorine: a little protects it, a lot blocks it from doing
+    anything at all. At high CYA levels, the ratio of chlorine to stabilizer gets so lopsided
+    that even a chlorine reading that looks fine on a test strip is barely sanitizing the water.
+    This is the single most common reason we see a pool where the owner swears they "shocked it
+    three times and it's still green."
+  </p>
+
+  <h2>How to tell if this is your problem</h2>
+  <ol class="steps">
+    <li>
+      Your pool has used trichlor tabs as the primary chlorine source for more than a season or
+      two without a partial drain in between.
+    </li>
+    <li>
+      Chlorine reads present on a test but the water stays green, cloudy, or fights off algae
+      poorly despite regular dosing.
+    </li>
+    <li>
+      A CYA test (many basic kits skip this — it may need a dedicated test) comes back high
+      relative to your chlorine level. As a rule of thumb, chlorine needs to stay well above a
+      fraction of the CYA reading to actually sanitize; when CYA gets too high, that math stops
+      working no matter how much chlorine gets added.
+    </li>
+  </ol>
+
+  <h2>The honest fix</h2>
+  <p>
+    Because CYA only leaves through water leaving the pool, the fix is usually a partial drain
+    and refill with fresh water to bring the ratio back into a workable range, followed by shock
+    treatment that can finally do its job. Switching future chlorine source away from trichlor
+    tabs (to unstabilized chlorine, for example) prevents the same buildup from recurring. This
+    is exactly the kind of thing we test for before recommending anything — {SITE.feeLine}
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Testing your own chlorine and pH is fine to do yourself, but an accurate CYA reading and the
+    decision of how much water to drain and refill is worth a professional visit — draining too
+    much water too fast can be a problem for some pool shells (hydrostatic pressure), and getting
+    the ratio right the first time saves you from a second round of wasted shock. If your pool
+    fits the neglected-pool pattern more broadly, see our{' '}
+    <a href="/guides/neglected-green-pool-recovery/">green-to-clean recovery guide</a>.
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Can I lower CYA without draining any water?</h3>
+    <p>
+      Not practically for most homeowners — CYA reducers exist but are slow, expensive at scale,
+      and less reliable than a partial drain and refill. Dilution remains the straightforward
+      fix for most residential pools.
+    </p>
+    <h3>How much water actually needs to be drained?</h3>
+    <p>
+      It depends on how high the current CYA reading is and your target level — there's no
+      universal percentage. Testing first is what turns this from a guess into a number.
+    </p>
+    <h3>Will switching away from trichlor tabs stop this from happening again?</h3>
+    <p>
+      It stops new stabilizer from being added with every dose, which is the root cause of the
+      slow climb. It won't lower CYA that's already in the water — that still requires dilution —
+      but it prevents the same problem from creeping back next season.
+    </p>
+  </section>
+
+  <Dispatch problem="Shock treatment not clearing a green pool" area={SITE.serviceArea} />
+</Base>

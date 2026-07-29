@@ -1,0 +1,105 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Cloudy Pool Water: 5 Causes & Fix Order"
+  description="Cloudy pool water has five common causes. Check them in this order before spending money on chemicals or equipment. Call (512) 764-9867."
+>
+  <h1>Cloudy pool water: the 5 causes and the order to check them</h1>
+
+  <p>
+    Cloudy pool water almost always traces back to one of five things: a filter that isn't
+    keeping up, an imbalance in basic chemistry, early-stage algae, mineral content from hard
+    water, or fine debris stirred up after wind or rain. Checking them in that order — cheapest
+    and easiest first — usually finds the cause without wasting money guessing.
+  </p>
+
+  <Dispatch problem="Pool water cloudy or hazy" area={SITE.serviceArea} />
+
+  <h2>Check in this order</h2>
+  <ol class="steps">
+    <li>
+      <strong>Filter condition and run time.</strong> A dirty cartridge, a multiport valve stuck
+      between settings, or a pump not running long enough each day are the most common and
+      cheapest-to-fix causes. High filter pressure compared to a clean baseline is the clearest
+      sign. See our guide on <a href="/guides/how-long-should-pool-pump-run-texas/">how long a
+      pump should run in Central Texas</a> if run time is in question.
+    </li>
+    <li>
+      <strong>Basic chemistry imbalance.</strong> pH or alkalinity outside the normal range can
+      cause haziness on its own, even with clean equipment and no algae present. This is a quick
+      test-and-correct fix once you know the numbers.
+    </li>
+    <li>
+      <strong>Early-stage algae.</strong> Before algae is visibly green, it can first show up as
+      a general haze or dullness in the water. If chemistry checks out but haze persists, this is
+      the next suspect — see our guide on{' '}
+      <a href="/guides/pool-green-but-pump-running/">green pools despite a running pump</a>.
+    </li>
+    <li>
+      <strong>High calcium or mineral content.</strong> Central Texas water is limestone-heavy,
+      and calcium buildup in the water column can scatter light and cause a persistent milky
+      look that chemistry adjustments alone won't fully clear.
+    </li>
+    <li>
+      <strong>Fine debris after weather.</strong> Wind and heavy rain stir up fine particulate
+      that a filter can take a day or two to fully clear even when everything else is working
+      correctly — sometimes cloudy water just needs more filtration time, not a different fix.
+    </li>
+  </ol>
+
+  <h2>Why the order matters</h2>
+  <p>
+    Most homeowners' instinct is to add more chemical the moment water looks off, but if the
+    actual cause is a clogged filter or a run-time problem, extra chemical doesn't fix anything —
+    it just gets filtered out (or not) at the same rate as before. Checking equipment and basic
+    chemistry first, before assuming algae or minerals, saves money and gets to the right answer
+    faster.
+  </p>
+
+  <h2>A quick way to narrow it down</h2>
+  <p>
+    If cloudiness appeared suddenly after a storm, weather-stirred debris is the likely
+    explanation and patience plus normal filtration is usually the fix. If it's been building
+    gradually over days or weeks with no weather event, chemistry or filtration is the more
+    likely cause. If the pool has a history of high stabilizer from trichlor tabs, read our guide
+    on <a href="/guides/pool-shock-not-working-cya/">why shock sometimes stops working</a> — CYA
+    buildup can present as persistent haze before it ever turns visibly green.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Basic chemistry testing and checking filter pressure are safe to do yourself. Call in a
+    technician when cloudiness persists despite balanced chemistry and a clean filter (a sign the
+    cause is something less obvious, like a mineral issue or an equipment problem you can't
+    diagnose from the pad), or when you want it resolved on a firm timeline rather than trial and
+    error. {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Is cloudy water always a sign of a serious problem?</h3>
+    <p>
+      No — mild, temporary haziness after a storm or heavy pool use is common and usually clears
+      with normal filtration. Persistent cloudiness that doesn't improve over a few days is what
+      is worth investigating further.
+    </p>
+    <h3>Can I use a clarifier product to fix cloudy water fast?</h3>
+    <p>
+      Clarifiers can help clump fine particles so the filter catches them more effectively, but
+      they treat a symptom, not the underlying cause — if chemistry or filtration is off, the
+      haze tends to return once the clarifier's effect wears off.
+    </p>
+    <h3>Does hard water cloudiness ever go away on its own?</h3>
+    <p>
+      Rarely without intervention. Calcium-driven haze usually needs a chemical adjustment
+      (a scale/stain treatment) or, in persistent cases, a partial drain and refill — it's
+      generally not something that clears with time alone the way weather-stirred debris does.
+    </p>
+  </section>
+
+  <Dispatch problem="Pool water cloudy or hazy" area={SITE.serviceArea} />
+</Base>

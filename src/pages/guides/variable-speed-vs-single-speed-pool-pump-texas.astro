@@ -1,0 +1,114 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dispatch from '../../components/Dispatch.astro';
+import { SITE } from '../../data/site.js';
+---
+
+<Base
+  title="Variable-Speed vs Single-Speed Pool Pumps in Texas"
+  description="Long Texas run seasons change the payback math on variable-speed pool pumps. A walk-through with the assumptions shown. Call (512) 764-9867."
+>
+  <h1>Variable-speed vs single-speed pool pumps in Texas: real payback math</h1>
+
+  <p>
+    Variable-speed pumps typically use a fraction of the electricity of a single-speed pump for
+    the same filtration job, because they can run longer at low speed instead of running fewer
+    hours at full power — and in Central Texas, where long summer run seasons mean pumps
+    operate more months of the year, that efficiency gap has more months to pay itself back than
+    in milder climates.
+  </p>
+
+  <Dispatch problem="Deciding on pump replacement options" area={SITE.serviceArea} />
+
+  <h2>Why speed matters more than horsepower</h2>
+  <p>
+    Pump energy use scales dramatically with speed — roughly, cutting speed in half can cut
+    power draw by a much larger fraction, not a proportional one, because of how flow and
+    friction interact in pool plumbing. A variable-speed pump running longer at a low speed can
+    move the same total water volume as a single-speed pump running fewer hours at full power,
+    while using significantly less electricity to do it.
+  </p>
+
+  <h2>A payback walk-through (illustrative numbers, not a quote)</h2>
+  <p>
+    Say a single-speed pump runs 8 hours a day at full power, and a comparable variable-speed
+    pump achieves the same turnover running 10–12 hours a day at a much lower speed. If that
+    swap cuts pump electricity use by roughly half — a commonly cited range in efficiency
+    studies, though actual results vary by pump size, local electricity rates, and pool size —
+    the annual electricity savings on a typical residential pool can be substantial enough that
+    the pump pays for its price difference over a pump's typical service life. The exact number
+    depends on your local electricity rate and how many months a year you run the pump, which is
+    part of why we look at your actual pump and usage before recommending a swap rather than
+    quoting a single number for every pool.
+  </p>
+
+  <h2>Why Texas specifically tilts this math</h2>
+  <ul class="link-grid">
+    <li>
+      <a href="/guides/how-long-should-pool-pump-run-texas/">
+        Longer run season
+        <small>More months of active pumping means more months of savings accrue</small>
+      </a>
+    </li>
+    <li>
+      <a href="/pool-pump-repair/">
+        Higher run-time-per-day needs
+        <small>Peak summer heat often requires longer daily run times to keep up</small>
+      </a>
+    </li>
+  </ul>
+  <p>
+    Both factors point the same direction: pumps in Central Texas simply run more than pumps in
+    cooler climates, and the efficiency gap between variable- and single-speed compounds with
+    every extra hour of runtime.
+  </p>
+
+  <h2>When the upgrade decision actually comes up</h2>
+  <p>
+    Most homeowners don't proactively swap a working single-speed pump — the decision usually
+    arrives when the old motor fails. See our guide on{' '}
+    <a href="/guides/pool-pump-repair-or-replace/">repair vs replacement</a> for how to think
+    about that fork. If replacement is already on the table, that's the natural moment to weigh
+    variable-speed against a like-for-like single-speed swap.
+  </p>
+
+  <h2>When to call a pro</h2>
+  <p>
+    Estimating your specific payback timeline requires knowing your pump's actual horsepower,
+    your local electricity rate, and your real run-time needs — details worth reviewing with a
+    technician rather than applying a generic online calculator to your pool. {SITE.feeLine}
+  </p>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <h3>Is it worth upgrading to a variable-speed pump when the old one finally dies?</h3>
+    <p>
+      Often yes, especially on an older single-speed motor that ran full-time for years. The
+      energy savings over a Central Texas run season can offset a meaningful share of the
+      upgrade cost, and our factory-authorized dealer backing keeps it warranty-eligible.
+    </p>
+    <h3>Do variable-speed pumps need more maintenance than single-speed?</h3>
+    <p>
+      Not meaningfully more — the physical wear items (seals, o-rings, impeller) are similar.
+      Variable-speed pumps add electronic drive components, which introduce a different failure
+      mode (see our guide on{' '}
+      <a href="/guides/variable-speed-pump-keeps-shutting-off/">why they sometimes shut
+      themselves off</a>) but don't inherently require more routine service.
+    </p>
+    <h3>Are federal efficiency rules relevant here?</h3>
+    <p>
+      Yes — efficiency standards have pushed the market toward variable-speed pumps for new
+      installations in many cases, which is part of why they've become the more common
+      replacement option regardless of climate. Texas's long run season just makes the case
+      stronger, not different in kind.
+    </p>
+    <h3>Does pool size change whether the upgrade makes sense?</h3>
+    <p>
+      Larger pools with longer required run times generally see the payback play out faster
+      simply because there's more total runtime for the efficiency gap to act on. Smaller pools
+      still benefit, just over a longer timeline.
+    </p>
+  </section>
+
+  <Dispatch problem="Deciding on pump replacement options" area={SITE.serviceArea} />
+</Base>
